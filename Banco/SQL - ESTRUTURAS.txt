@@ -1,0 +1,45 @@
+CREATE TABLE categorias (
+nome VARCHAR(30) NOT NULL PRIMARY KEY);
+
+CREATE TABLE noticias(
+idnoticia INT AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(30) NOT NULL,
+descricao VARCHAR(60),
+data DATE,
+nomecategoria VARCHAR(30),
+CONSTRAINT fk_categoria FOREIGN KEY (nomecategoria)  
+  REFERENCES categorias(nome)  
+  ON DELETE CASCADE  
+  ON UPDATE CASCADE 
+
+);
+
+CREATE TABLE usuarios(
+idusuario INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(30) NOT NULL,
+email VARCHAR(40) UNIQUE,
+senha VARCHAR(255),
+foto VARCHAR(100),
+cep VARCHAR(9),
+logradouro VARCHAR(60),
+bairro VARCHAR(60),
+cidade VARCHAR(30),
+tipousuario INT DEFAULT 1,
+status BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE recuperacao (
+  utilizador  VARCHAR(255) NOT NULL,
+  confirmacao VARCHAR(40) NOT NULL,
+  KEY(utilizador, confirmacao)
+)
+
+CREATE TABLE redator(
+id_redator INT AUTO_INCREMENT PRIMARY KEY,
+nome_redator VARCHAR(30) NOT NULL,
+email_redator VARCHAR(40) UNIQUE,
+senha_redator VARCHAR(255),
+foto_redator VARCHAR(100),
+tipousuario INT DEFAULT 2,
+status BOOLEAN DEFAULT FALSE
+);

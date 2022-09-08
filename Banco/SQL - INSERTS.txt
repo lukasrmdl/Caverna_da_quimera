@@ -1,0 +1,15 @@
+INSERT INTO `categorias` (`nome`)
+VALUES ('Filmes');
+
+INSERT INTO `categorias` (`nome`)
+VALUES ('Séries');
+
+INSERT INTO `categorias` (`nome`)
+VALUES ('Games');
+
+INSERT INTO `categorias` (`nome`)
+VALUES ('Livros');
+
+INSERT INTO `categorias` (`nome`)
+VALUES ('Quadrinhos');
+
