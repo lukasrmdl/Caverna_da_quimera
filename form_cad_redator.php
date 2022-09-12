@@ -3,7 +3,9 @@ require_once("includes/header.php");
 ?>
 
 <html>
-
+<head>
+    <link rel="stylesheet" type="text/css" href="css/padrao.css">
+</head>
 <body>
     <h1> Cadastro de novos Redatores </h1>
     <form action="controllers/controller_redator.php" method="POST" enctype="multipart/form-data">

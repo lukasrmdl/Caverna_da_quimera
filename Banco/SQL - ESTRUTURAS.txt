@@ -4,6 +4,8 @@ nome VARCHAR(30) NOT NULL PRIMARY KEY);
 CREATE TABLE noticias(
 idnoticia INT AUTO_INCREMENT PRIMARY KEY,
 titulo VARCHAR(30) NOT NULL,
+capa VARCHAR(100),
+nome_capa VARCHAR(40),
 descricao VARCHAR(60),
 data DATE,
 nomecategoria VARCHAR(30),
@@ -32,7 +34,7 @@ CREATE TABLE recuperacao (
   utilizador  VARCHAR(255) NOT NULL,
   confirmacao VARCHAR(40) NOT NULL,
   KEY(utilizador, confirmacao)
-)
+);
 
 CREATE TABLE redator(
 id_redator INT AUTO_INCREMENT PRIMARY KEY,

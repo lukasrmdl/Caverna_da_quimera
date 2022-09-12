@@ -3,10 +3,13 @@ require("controllers/funcoes_db.php");
 require_once("includes/header.php");
 ?>
 <?php
+
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
+
 $conexao = fazconexao();
 
 
-$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Filmes'";
+$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Livros'";
 
 
 $resultados = ConsultaSelectAll($sql);

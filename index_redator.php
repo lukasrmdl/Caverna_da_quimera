@@ -1,5 +1,6 @@
 <?php
 require_once("includes/header.php");
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 ?>
 
 <html>

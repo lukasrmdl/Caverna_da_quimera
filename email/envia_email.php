@@ -3,6 +3,8 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 require "PHPMailer/src/PHPMailer.php";
 require "PHPMailer/src/SMTP.php";
 
@@ -39,11 +41,11 @@ $mail->SMTPOptions = [
     ]
 ];
 
-$mail->Username = 'lukas.rmdl@gmail.com'; ////Usuário para autenticação 
-$mail->Password = 'ynhoamxdqoqekxpq'; //senha autenticação
+$mail->Username = 'dawexemplo2014@gmail.com'; ////Usuário para autenticação 
+$mail->Password = 'tcycdlrjmtbngpie'; //senha autenticação
 
 // Remetente da mensagem - sempre usar o mesmo usuário da autenticação  
-$mail->setFrom('lukas.rmdl@gmail.com','Caverna da Quimera');
+$mail->setFrom('cavernaDaQuimera@gmail.com','Caverna da Quimera');
 
 // Endereço de destino do email
 $mail->addAddress($email, $nome );

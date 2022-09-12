@@ -1,6 +1,7 @@
 <?php
 require("controllers/funcoes_db.php");
 require_once("includes/header.php");
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $query = "";
 $nomeprod = $_POST['busca_noticia_editar'];
 
@@ -31,6 +32,10 @@ foreach ($resultados as $linha) {
         <form action="controllers/controller_noticia.php" method="post">
             <p>ID: <?php echo $linha['idnoticia']; ?></p>
             <input type="hidden" name="idnoticia" value="<?php echo $linha['idnoticia'] ?>">
+            <?php
+                echo '<img src="./imagens_noticias/'.$linha['nome_capa'].'">';
+            ?>
+            <p>Nova capa: <input type="file" name="arquivo_capa"></p>
             <p>Categoria: <input readonly type="text" name="mostra_categoria" value="<?php echo $linha['nomecategoria'] ?>"></p>
             <select name="categoria_noticia" id="categoria_noticia">
                 <option>Nova Categoria</option>

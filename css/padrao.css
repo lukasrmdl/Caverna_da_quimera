@@ -1,0 +1,59 @@
+body{
+    background-color:#000000;
+    color: #fe6c2b;
+}
+
+p {
+    color: #d43b2d;
+}
+label {
+    color: #d43b2d;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fe6c2b;
+}
+button {
+    background-color: #340016;
+    color: #d43b2d;
+}
+button:hover {
+    color: #fe6c2b;
+}
+button:focus{
+    background-color: #d43b2d;
+    color: #340016;
+}
+input, select, textarea {
+    background-color: #340016;
+    color: #d43b2d;
+}
+input:focus {
+    color: #340016;
+    background: #d43b2d;
+}
+
+input[type=submit]:focus{
+    color: #340016;
+    background: #d43b2d;
+}
+
+a {
+    background-color: #340016;
+    color: #d43b2d;
+
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #fe6c2b;
+    
+}
+a:active {
+	text-decoration:none;
+    color: #9f102c;
+}
+
+
+

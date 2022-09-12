@@ -6,13 +6,26 @@ if($_POST['botao']=='Cadastrar'){
 	$titulo=$_POST['titulo_noticia'];
 	$data=$_POST['data_noticia'];
 	$descricao=$_POST['desc_noticia'];
+	$nome_arquivo=$_FILES['arquivo_capa']['name'];  
+	$tamanho_arquivo=$_FILES['arquivo_capa']['size']; 
+	$arquivo_temporario=$_FILES['arquivo_capa']['tmp_name'];
+	
+	if (move_uploaded_file($arquivo_temporario, "../imagens_noticias/$nome_arquivo"))
+	{
+			$_SESSION["msg"]= " Upload do arquivo: ". $nome_arquivo." foi concluído com sucesso <br>";
+	}
+	else
+	{
+		$_SESSION["msg"]= "Arquivo não pode ser copiado para o servidor.";
+			$nome_arquivo='foto.png';
 
+	}
 
     $_SESSION["msg"]=''; 
 
-	$array = array($categoria, $titulo, $data, $descricao);
+	$array = array($categoria, $titulo, $data, $descricao, $nome_arquivo);
 
-	$query ="insert into noticias (nomecategoria, titulo, data, descricao) values (?, ?, ?, ?)";
+	$query ="insert into noticias (nomecategoria, titulo, data, descricao, capa, nome_capa) values (?, ?, ?, ?, ?, '{$nome_arquivo}')";
 
 	$retorno=fazConsulta($query,$array);		
 
@@ -36,10 +49,9 @@ if($_POST['botao']=='Editar'){
 	$descricao=$_POST['desc_noticia'];
 	$idnoticia= $_POST['idnoticia'];
 
-
     $query= "update noticias set nomecategoria= ?, titulo = ?, data = ?, descricao = ? where idnoticia = ?";
     
-    $array = array($categoria, $titulo, $data, $descricao, $idnoticia);
+    $array = array($categoria, $titulo, $data, $descricao, $nome_arquivo, $idnoticia);
 
 	$resultado=fazConsulta($query,$array);
 	

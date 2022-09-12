@@ -1,4 +1,5 @@
 <?php
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 session_start();
 include("controllers/funcoes_db.php");
 if($_GET['h']){

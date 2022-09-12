@@ -6,13 +6,16 @@
 ?>
 <?php
 require_once("includes/header.php");
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
+
 ?>
 
 <html>
 <script src="funcoes_ajax.js"> </script>
+
 <body>
     <h1> Cadastar nova Notícia </h1>
-    <form action="controllers/controller_noticia.php" method="POST" >
+    <form action="controllers/controller_noticia.php" method="POST"  enctype="multipart/form-data">
         <select name="categoria_noticia" id="categoria_noticia"> 
             <option>Escolha a categoria</option>
         <?php
@@ -26,6 +29,7 @@ require_once("includes/header.php");
         <p>Título : <input placeholder="Trem bala com Brad Pitt" type="text" name="titulo_noticia"></p>
         <p>Data: <input type="date" name="data_noticia"></p>
         <label> Descrição: <textarea placeholder="Descrição..." id="txtArea" name="desc_noticia" rows="10" cols="70"></textarea></label>
+        <p>Capa: <input type="file" name="arquivo_capa"></p>
         <p><input type="reset" name="botao" value="Limpar">
             <input type="submit" name="botao" value="Cadastrar">
         </p>

@@ -1,5 +1,6 @@
 <?php
 require_once("includes/header.php");
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
 echo "<button><a href='form_cad_noticia.php'>Cadastrar novas notícias</a></button>";
 
@@ -7,6 +8,7 @@ echo "<h1> Editar Notícias </h1>";
 
 require("controllers/funcoes_db.php");
 $conexao=fazconexao();
+
 
 echo "<form method='POST' action='pesquisa_edicao.php'>";
         echo "<input type='text' size= '26' name='busca_noticia_editar' id='busca_noticia_editar' placeholder='Buscar notícia para edição'>";
@@ -42,6 +44,9 @@ foreach($resultados as $linha) {
 <section>
 <form action="controllers/controller_noticia.php" method="post">
 <p>ID: <?php echo $linha['idnoticia']; ?></p>
+<?php
+echo '<img src="./imagens_noticias/'.$linha['nome_capa'].'">';
+?>
 <input type ="hidden" name = "idnoticia" value="<?php echo $linha['idnoticia']?>">
 <p>Categoria:  <input readonly type="text" name="mostra_categoria" value="<?php echo $linha['nomecategoria']?>"></p>
 <select name="categoria_noticia" id="categoria_noticia"> 

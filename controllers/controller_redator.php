@@ -1,6 +1,7 @@
 <?php
 include("funcoes_db.php");
 include("../email/envia_email.php");
+include("../email/PHPMailer/src/Exception.php");
 session_start();
 if($_POST['botao']=='Cadastrar'){
 	$nome=$_POST['nome'];

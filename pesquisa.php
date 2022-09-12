@@ -4,6 +4,7 @@ require_once("includes/header.php");
 $query = "";
 $nomeprod = $_POST['busca_assunto'];
 
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
 
 $sql = "SELECT * FROM noticias WHERE (1=1) ";
@@ -25,6 +26,9 @@ foreach($resultados as $linha) {
     <section>
         <form action="controllers/controller_noticia.php" method="post">
 
+            <?php
+                echo '<img src="./imagens_noticias/'.$linha['nome_capa'].'">';
+            ?>
             <p>Título: <input readonly type="text" name="titulo_noticia" value="<?php echo $linha['titulo'] ?>"></p>
             <p>Categoria: <input readonly type="text" name="titulo_noticia" value="<?php echo $linha['nomecategoria'] ?>"></p>
             <p>Data: <input readonly type="date" name="data_noticia" value="<?php echo $linha['data'] ?>" ?></p>

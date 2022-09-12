@@ -3,6 +3,9 @@ require("controllers/funcoes_db.php");
 require_once("includes/header.php");
 ?>
 <?php
+
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
+
 $conexao = fazconexao();
 
 
