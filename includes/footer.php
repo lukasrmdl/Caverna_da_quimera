@@ -4,7 +4,7 @@
 
     <div id="pesquisa_footer">
         <figure>
-            <img width="80px" src="midia/main_logo.png" />
+            <img width="80px" src="midia/quimera_logo.png" />
         </figure>
         <form method="POST" action="pesquisa.php">
             <input type="text" size= "26" name="busca_assunto" id="busca_assunto" placeholder="Procurar...">
