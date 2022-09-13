@@ -6,7 +6,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
 <html>
     
-    <body>teste</body>
+    <body id="home_body">teste</body>
 </html>
 
 

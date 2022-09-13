@@ -4,7 +4,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 ?>
 
 <html>
-    <body>teste</body>
+    <body id="suporte_body">teste</body>
 </html>
 
 

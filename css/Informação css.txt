@@ -1,0 +1,8 @@
+paleta de cores
+#fe6c2b - laranja claro
+#d43b2d - laranja forte
+#9f102c - vermelho
+#340016 - vermelho forte
+#080808 - preto
+#2e2e2ef1 - cinza
+Fonte: Noto Serif

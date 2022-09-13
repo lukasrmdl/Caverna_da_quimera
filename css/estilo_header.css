@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+#header_cabecario_h1 {
+    background-color: #080808;
+}
+#header_cabecario_h1 img{
+    width: 9rem;
+    vertical-align: bottom;
+}
+#header_cabecario_h1 span{
+    font-family: 'Noto Serif', sans-serif;    
+    font-size: 3rem;
+}
+#header_cabecario_h1 form {
+}
+#header_nav {
+    background-color: #252525f1;
+    list-style-type: none;
+
+}
+#header_nav ul {
+    overflow: hidden;
+    background-color: #340016;
+}
+#header_nav li {
+    display: inline;
+    float: left;
+
+}
+#header_nav li a {
+    text-decoration: none;
+    display: block;
+    padding: 25px 30px;
+    font-size: 1.2rem;
+
+}
+#header_nav a, #header_nav a:link {
+    background-color: #340016;
+    color: #d43b2d;
+    text-align: center;
+    text-decoration: none;
+  }
+
+#header_nav a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #d43b2d;
+    color: #fe6c2b;
+}
+#header_nav a:active {
+    text-decoration: none;
+}
+
+  
+    
+
+    

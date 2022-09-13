@@ -2,6 +2,8 @@
 require("controllers/funcoes_db.php");
 require_once("includes/header.php");
 ?>
+<body id="series_body">
+
 <?php
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
@@ -29,6 +31,7 @@ foreach($resultados as $linha) {
             <button type="submit" name="botao" value="Acessar"> Acessar </button>
         </form>
     </section>
+</body>
 <?php
 }
 require_once("includes/footer.php");

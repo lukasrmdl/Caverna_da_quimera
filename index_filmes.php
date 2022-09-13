@@ -20,6 +20,7 @@ echo "<h1> Home >> Filmes </h1>";
 foreach($resultados as $linha) {
 
 ?>
+<body id="filmes_body">
     <section>
         <form action="controllers/controller_noticia.php" method="post">
 
@@ -31,6 +32,7 @@ foreach($resultados as $linha) {
             <button type="submit" name="botao" value="Acessar"> Acessar </button>
         </form>
     </section>
+</body>
 <?php
 }
 require_once("includes/footer.php");
