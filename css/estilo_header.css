@@ -3,18 +3,36 @@
     padding:0;
     margin:0;
 }
+.grid-container-header {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 80% 120% 40%;
+ }
+.grid-item-header {
+    padding-bottom: 4%;
+    padding-top: 4%;
+    text-align: center;
+}
 #header_cabecario_h1 {
     background-color: #080808;
 }
 #header_cabecario_h1 img{
-    width: 9rem;
+    width: 8.5rem;
+
     vertical-align: bottom;
 }
 #header_cabecario_h1 span{
     font-family: 'Noto Serif', sans-serif;    
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
-#header_cabecario_h1 form {
+#header_titulo {
+    padding-top: 1em;
+}
+#form-header-busca{
+    padding-top: 2.4em;
+}
+#form-header-busca input{
+    border-radius: 10%;
 }
 #header_nav {
     background-color: #252525f1;
@@ -52,7 +70,38 @@
 #header_nav a:active {
     text-decoration: none;
 }
-
+.dropdown_header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+.dropdown_header li{
+    float: left;
+}
+.dropdown_header li a {
+    text-decoration: none;
+    padding: 6px 16px;
+    display: block;
+}
+.conteudo_dropdown_header {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+.conteudo_dropdown_header li{
+    float: none;
+}
+.conteudo_dropdown_header a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown_header:hover .conteudo_dropdown_header {
+    display: block;
+} 
   
     
 
