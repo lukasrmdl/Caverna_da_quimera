@@ -2,6 +2,7 @@
 require("controllers/funcoes_db.php");
 require_once("includes/header.php");
 ?>
+<body id="filmes_body">
 <?php
 
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
@@ -20,7 +21,6 @@ echo "<h1> Home >> Filmes </h1>";
 foreach($resultados as $linha) {
 
 ?>
-<body id="filmes_body">
     <section>
         <form action="controllers/controller_noticia.php" method="post">
 
@@ -35,5 +35,7 @@ foreach($resultados as $linha) {
 </body>
 <?php
 }
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
+
 require_once("includes/footer.php");
 ?>

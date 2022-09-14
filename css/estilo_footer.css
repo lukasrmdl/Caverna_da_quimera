@@ -13,6 +13,14 @@
     padding-bottom: 2%;
     padding-top: 27%;
 }
+.grid-container-footer-info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-area: footer;
+ }
+.grid-item-footer-info {
+    text-align: center;
+}
 #footer_h1 {
     background-color: #080808;
 }
@@ -42,7 +50,6 @@
 #footer_nav ul {
     overflow: hidden;
     background-color: #340016;
-
 }
 #footer_nav li {
     display: inline;

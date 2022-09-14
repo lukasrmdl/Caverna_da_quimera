@@ -36,5 +36,7 @@ foreach($resultados as $linha) {
 </body>
 <?php
 }
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
+
 require_once("includes/footer.php");
 ?>

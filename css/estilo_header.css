@@ -18,7 +18,6 @@
 }
 #header_cabecario_h1 img{
     width: 8.5rem;
-
     vertical-align: bottom;
 }
 #header_cabecario_h1 span{
@@ -102,6 +101,7 @@
 .dropdown_header:hover .conteudo_dropdown_header {
     display: block;
 } 
+
   
     
 

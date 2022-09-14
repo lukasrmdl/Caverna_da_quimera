@@ -23,18 +23,14 @@
             <li><a class="nav games" href="index_games.php">Games</a></li>
             <li><a class="nav livros" href="index_livros.php">Livros</a></li>
             <li><a class="nav hqs" href="index_hqs.php">Quadrinhos</a></li>
-            <li class="dropdown_footer">
-                <a class="nav suporte" href="index_suporte.php">Suporte</a>
-                <ul class="conteudo_dropdown_footer">
-                    <li><a class="nav redator" href="index_redator.php">Redator</a></li>
-                </ul>
+            <li><a class="nav suporte" href="index_suporte.php">Suporte</a></li>
         </ul>
 
     </nav>
-    <div id="footer_info">
-        <p>© 2022 Caverna da Quimera - Cinema, Séries, Games, Livros e Quadrinhos</p>
-        <a href="http://www.facebook.com">Facebook</a>
-        <a href="http://www.instagram.com">Instagram</a>
-        <a href="http://www.twitter.com">Twitter</a>
+    <div class="grid-container-footer-info" id="footer_info">
+        <p class="grid-item-footer-info">© 2022 Caverna da Quimera - Cinema, Séries, Games, Livros e Quadrinhos</p>
+        <a id="facebook" class="grid-item-footer-info" href="http://www.facebook.com">Facebook</a>
+        <a id="instagram" class="grid-item-footer-info" href="http://www.instagram.com">Instagram</a>
+        <a id="twitter" class="grid-item-footer-info" href="http://www.twitter.com">Twitter</a>
     </div>
 </footer>

@@ -22,6 +22,7 @@ echo "<h1> Home >> Livros </h1>";
 foreach($resultados as $linha) {
 
 ?>
+
     <section>
         <form action="controllers/controller_noticia.php" method="post">
 
@@ -36,5 +37,6 @@ foreach($resultados as $linha) {
 </body>
 <?php
 }
+echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 require_once("includes/footer.php");
 ?>
