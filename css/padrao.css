@@ -29,6 +29,7 @@ button:focus {
   background-color: #d43b2d;
   color: #340016;
 }
+
 input, select, textarea {
   background-color: #340016;
   color: #d43b2d;

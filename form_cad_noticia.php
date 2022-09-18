@@ -26,9 +26,12 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
             }
         ?>
         </select>
+        <p>Nome do autor : <input placeholder="Eduardo" type="text" name="nome_autor"></p>
+        <p>Sobrenome do autor : <input placeholder="Silva" type="text" name="sobrenome_autor"></p>
+        <p>Email do autor : <input placeholder="fulano@hotmail.com" type="email" name="email_autor"></p>
         <p>Título : <input placeholder="Trem bala com Brad Pitt" type="text" name="titulo_noticia"></p>
-        <p>Data: <input type="date" name="data_noticia"></p>
-        <label> Descrição: <textarea placeholder="Descrição..." id="txtArea" name="desc_noticia" rows="10" cols="70"></textarea></label>
+        <p>Subtítulo  : <input placeholder="Trem bala com Brad Pitt" type="text" name="subtitulo_noticia"></p>
+        <label> Texto: <textarea placeholder="Descrição..." id="txtArea" name="texto_noticia" rows="10" cols="70"></textarea></label>
         <p>Capa: <input type="file" name="arquivo_capa"></p>
         <p><input type="reset" name="botao" value="Limpar">
             <input type="submit" name="botao" value="Cadastrar">

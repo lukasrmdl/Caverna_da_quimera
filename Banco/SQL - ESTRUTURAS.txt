@@ -3,17 +3,21 @@ nome VARCHAR(30) NOT NULL PRIMARY KEY);
 
 CREATE TABLE noticias(
 idnoticia INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(30) NOT NULL ,
+sobrenome VARCHAR(30) NOT NULL,
+email VARCHAR(80) ,
 titulo VARCHAR(30) NOT NULL,
+subtitulo char(200) ,
 capa VARCHAR(100),
 nome_capa VARCHAR(40),
-descricao VARCHAR(60),
+texto text NOT NULL,
+ver char(3) DEFAULT 'off' ,
 data DATE,
 nomecategoria VARCHAR(30),
 CONSTRAINT fk_categoria FOREIGN KEY (nomecategoria)  
   REFERENCES categorias(nome)  
   ON DELETE CASCADE  
   ON UPDATE CASCADE 
-
 );
 
 CREATE TABLE usuarios(

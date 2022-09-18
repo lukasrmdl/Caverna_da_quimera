@@ -3,9 +3,13 @@ include("funcoes_db.php");
 session_start();
 if($_POST['botao']=='Cadastrar'){
 	$categoria=$_POST['categoria_noticia'];
+	$nomeautor=$_POST['nome_autor'];
+	$sobrenomeautor=$_POST['sobrenome_autor'];
+	$email=$_POST['email_autor'];
 	$titulo=$_POST['titulo_noticia'];
-	$data=$_POST['data_noticia'];
-	$descricao=$_POST['desc_noticia'];
+	$subtitulo=$_POST['subtitulo_noticia'];
+	$data= date('Y/m/d');
+	$texto=$_POST['texto_noticia'];
 	$nome_arquivo=$_FILES['arquivo_capa']['name'];  
 	$tamanho_arquivo=$_FILES['arquivo_capa']['size']; 
 	$arquivo_temporario=$_FILES['arquivo_capa']['tmp_name'];
@@ -23,35 +27,32 @@ if($_POST['botao']=='Cadastrar'){
 
     $_SESSION["msg"]=''; 
 
-	$array = array($categoria, $titulo, $data, $descricao, $nome_arquivo);
+	$array = array($categoria, $nomeautor, $sobrenomeautor, $email, $titulo, $subtitulo, $data, $texto, $nome_arquivo);
 
-	$query ="insert into noticias (nomecategoria, titulo, data, descricao, capa, nome_capa) values (?, ?, ?, ?, ?, '{$nome_arquivo}')";
+	$query ="insert into noticias (nomecategoria, nome, sobrenome, email, titulo, subtitulo, data, texto, capa, nome_capa) values (?, ?, ?, ?, ?, ?, ?, ?, ?, '{$nome_arquivo}')";
 
 	$retorno=fazConsulta($query,$array);		
-
 
 	header("Location:../listagem_noticia_editar.php");
 
 	$_SESSION["msg"]= "Noticia Cadastrada com sucesso!";
 }
 
-else
-{
-	header("Location:../form_cad_noticia.php");
-}
-
 if($_POST['botao']=='Editar'){
 
-
+	$idnoticia =$_POST['idnoticia'];
 	$categoria=$_POST['categoria_noticia'];
+	$nomeautor=$_POST['nome_autor'];
+	$sobrenomeautor=$_POST['sobrenome_autor'];
+	$email=$_POST['email_autor'];
 	$titulo=$_POST['titulo_noticia'];
-	$data=$_POST['data_noticia'];
-	$descricao=$_POST['desc_noticia'];
-	$idnoticia= $_POST['idnoticia'];
+	$subtitulo=$_POST['subtitulo_noticia'];
+	$texto=$_POST['texto_noticia'];
 
-    $query= "update noticias set nomecategoria= ?, titulo = ?, data = ?, descricao = ? where idnoticia = ?";
-    
-    $array = array($categoria, $titulo, $data, $descricao, $nome_arquivo, $idnoticia);
+
+    $query= "update noticias set  nome= ?, sobrenome= ?, email = ?, titulo = ?, subtitulo= ?, texto = ? where idnoticia = ?";
+
+    $array = array($nomeautor, $sobrenomeautor, $email, $titulo, $subtitulo, $texto, $idnoticia);
 
 	$resultado=fazConsulta($query,$array);
 	
@@ -92,7 +93,3 @@ header("Location:../listagem_noticia_editar.php");
 header("Location:../listagem_noticia_editar.php");
 
 }
-
-
-
-

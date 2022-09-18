@@ -11,7 +11,7 @@ $sql = "SELECT * FROM noticias WHERE (1=1) ";
 
 
 if ($_POST['busca_noticia_editar'] != "") {
-    $sql .= " AND titulo LIKE '%{$_POST['busca_noticia_editar']}%' OR descricao LIKE '%{$_POST['busca_noticia_editar']}%'" ;
+    $sql .= " AND titulo LIKE '%{$_POST['busca_noticia_editar']}%' OR texto LIKE '%{$_POST['busca_noticia_editar']}%'" ;
 }
 
 
@@ -37,19 +37,12 @@ foreach ($resultados as $linha) {
             ?>
             <p>Nova capa: <input type="file" name="arquivo_capa"></p>
             <p>Categoria: <input readonly type="text" name="mostra_categoria" value="<?php echo $linha['nomecategoria'] ?>"></p>
-            <select name="categoria_noticia" id="categoria_noticia">
-                <option>Nova Categoria</option>
-                <?php
-                foreach ($options as $option) {
-                ?>
-                    <option value=<?= $option['nome'] ?>><?= $option['nome'] ?></option>
-                <?php
-                }
-                ?>
-            </select>
-            <p>Título: <input type="text" name="titulo_noticia" value="<?php echo $linha['titulo'] ?>"></p>
-            <p>Data: <input type="date" name="data_noticia" value="<?php echo $linha['data'] ?>" ?></p>
-            <label> Descrição: <textarea id="txtArea" name="desc_noticia" rows="10" cols="70"><?php echo $linha['descricao'] ?></textarea></label>
+                <p>Nome do autor : <input placeholder="Eduardo" type="text" name="nome_autor" value="<?php echo $linha['nome']?>"></p>
+                <p>Sobrenome do autor : <input placeholder="Silva" type="text" name="sobrenome_autor" value="<?php echo $linha['sobrenome']?>"></p>
+                <p>Email do autor : <input placeholder="fulano@hotmail.com" type="email" name="email_autor" value="<?php echo $linha['email']?>"></p>
+                <p>Título:  <input type="text" name="titulo_noticia" value="<?php echo $linha['titulo']?>"></p>
+                <p>Subtítulo  : <input placeholder="Trem bala com Brad Pitt" type="text" name="subtitulo_noticia" value="<?php echo $linha['subtitulo']?>"></p>
+                <textarea id="txtArea" name="texto_noticia" rows="10" cols="70"><?php echo $linha['texto']?></textarea>
 
             <button type="submit" name="botao" value="Editar"> Editar </button>
             <button type="submit" name="botao" value="Excluir" onclick="return confirma_excluir()"> Deletar </button>

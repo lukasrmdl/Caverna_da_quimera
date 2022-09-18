@@ -3,6 +3,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilo_header.css">
     <link rel="stylesheet" type="text/css" href="css/padrao.css">
+    <script src="js/jQuery/jquery_base.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <header>
     <h1 class="grid-container-header" id="header_cabecario_h1">
