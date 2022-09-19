@@ -5,4 +5,7 @@ paleta de cores
 #340016 - vermelho forte
 #080808 - preto
 #2e2e2ef1 - cinza
+#dadada - branco normal;
+#dadadad5 - branco sombra;
+#fff - branco mais claro;
 Fonte: Noto Serif

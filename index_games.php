@@ -16,31 +16,30 @@ $sql = "SELECT * FROM noticias WHERE nomecategoria = 'Games'";
 
 $resultados = ConsultaSelectAll($sql);
 
-echo "<h1> Home >> Games </h1>";
+echo "<h1 style='margin-left:0.4em;'> Home >> Games </h1>";
 
 
 foreach($resultados as $linha) {
-
-?>
-    <section>
-        <form class="mostra_noticia" >
-
-            <?php
-                echo '<img src="./imagens_noticias/'.$linha['nome_capa'].'">';
-            ?>
-            <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">
-            <p>Título:  <input readonly type="text" name="titulo_noticia" value="<?php echo $linha['titulo']?>"></p>
-            <p>Subtítulo  : <input readonly placeholder="Trem bala com Brad Pitt" type="text" name="subtitulo_noticia" value="<?php echo $linha['subtitulo']?>"></p>
-            <textarea disabled style="overflow:hidden; resize:none;" id="txtArea" name="texto_noticia" rows="4" cols="70"><?php echo $linha['texto']?></textarea>
-            <p>Nome do autor : <input readonly placeholder="Eduardo" type="text" name="nome_autor" value="<?php echo $linha['nome']?>"></p>
-            <p>Sobrenome do autor : <input readonly placeholder="Silva" type="text" name="sobrenome_autor" value="<?php echo $linha['sobrenome']?>"></p>
-            <p>Email do autor : <input readonly placeholder="fulano@hotmail.com" type="email" name="email_autor" value="<?php echo $linha['email']?>"></p>
-
-            <button onclick="window.location.href = 'http://localhost/caverna_da_quimera/Acesso_noticia.php?acessa_noticia=<?php echo $linha['idnoticia']?>'" form="mostra_noticia" type="submit" name="botao" value="Acessar" >Acessar</button>
-        </form>
-    </section>
-</body>
-<?php
+    ?>
+    
+    <hr class="featurette-divider">
+    
+    <div class="row featurette">
+    <div class="col-md-7">
+    <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">
+    <?php echo "<h2 name='titulo_noticia' class='featurette-heading'>$linha[titulo]</h2>"?>
+    <?php echo "<h3 class='text-muted'>$linha[subtitulo]</h3>"?>
+    <?php echo "<textarea disabled class='lead'>$linha[texto]</textarea><p><a class='btn2 btn-primary' href='http://localhost/caverna_da_quimera/Acesso_noticia.php?acessa_noticia=$linha[idnoticia]'>Acessar</a></p>"?>
+    <?php echo "<p class='autor lead'>Autor: $linha[nome] $linha[sobrenome], $linha[data]</p>" ?>
+    
+    </div>
+    <div class="col-md-5">
+    
+    <?php echo '<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
+    
+    </div>
+    </div>
+    <?php
 }
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 

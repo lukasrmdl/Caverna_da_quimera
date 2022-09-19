@@ -33,18 +33,14 @@ if($_POST['botao']=='Cadastrar'){
 
 	$retorno=fazConsulta($query,$array);		
 
+	$_SESSION["msg"]= "Noticia Cadastrada com sucesso!";
 	header("Location:../listagem_noticia_editar.php");
 
-	$_SESSION["msg"]= "Noticia Cadastrada com sucesso!";
 }
 
 if($_POST['botao']=='Editar'){
 
 	$idnoticia =$_POST['idnoticia'];
-	$categoria=$_POST['categoria_noticia'];
-	$nomeautor=$_POST['nome_autor'];
-	$sobrenomeautor=$_POST['sobrenome_autor'];
-	$email=$_POST['email_autor'];
 	$titulo=$_POST['titulo_noticia'];
 	$subtitulo=$_POST['subtitulo_noticia'];
 	$texto=$_POST['texto_noticia'];

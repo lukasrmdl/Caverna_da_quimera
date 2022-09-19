@@ -15,6 +15,9 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
 <body>
     <h1> Cadastar nova Notícia </h1>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+    <div class="col-md-7">
     <form action="controllers/controller_noticia.php" method="POST"  enctype="multipart/form-data">
         <select name="categoria_noticia" id="categoria_noticia"> 
             <option>Escolha a categoria</option>
@@ -37,6 +40,8 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
             <input type="submit" name="botao" value="Cadastrar">
         </p>
     </form>
+    </div>
+    </div>
     <?php
     echo "<div id='msg'>";
 

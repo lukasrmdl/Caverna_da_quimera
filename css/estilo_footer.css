@@ -7,49 +7,49 @@
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-template-rows: 80% 110% 40%;
+    align-items: center;
+    margin-top: 2em;
  }
 .grid-item-footer {
     text-align: center;
-    padding-bottom: 2%;
-    padding-top: 27%;
+    align-items: center;
 }
 .grid-container-footer-info {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100% 40% 40% 40%;
     grid-area: footer;
  }
 .grid-item-footer-info {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 #footer_h1 {
     background-color: #080808;
 }
 #footer_h1 span {
     font-family: 'Noto Serif', sans-serif;
-    font-size: 3rem;
-    padding-top: 15%;
+    font-size: 2.5rem;
+    color: #dadadad5;
+
 }
 #footer_h1 img{
     width: 6rem;
     vertical-align: bottom;
 }
-#footer_titulo {
-    padding-top: 1em;
-}
 #form-footer-busca{
-    padding-top: 3.3em;
-}
-#form-footer-busca input{
-    border-radius: 10%;
+        width: 110%;
 }
 #footer_nav {
-    background-color: #252525f1;
     list-style-type: none;
-
+    background-color: #000;
 }
 #footer_nav ul {
     overflow: hidden;
-    background-color: #340016;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
 }
 #footer_nav li {
     display: inline;
@@ -63,24 +63,23 @@
 
 }
 #footer_nav a, #footer_nav a:link, #footer_nav a:visited {
-    background-color: #340016;
-    color: #d43b2d;
+    background-color: #000000c7;
+    color: #dadada;
     text-align: center;
     text-decoration: none;
 }
 
 #footer_nav a:hover {
     text-decoration: none;
-    border-bottom: 1px solid #d43b2d;
-    color: #fe6c2b;
+    border-bottom: 0.5px solid #fff;
+    color: #fff;
 }
 #footer_nav a:active {
     text-decoration: none;
-    color: #340016;
-    background-color: #d43b2d;
-    border-bottom: 0px solid #d43b2d;
-
+    color: #fff;
+    border-bottom: 0px solid;
 }
+
 .dropdown_footer ul {
     list-style-type: none;
     padding: 0;
@@ -111,3 +110,29 @@
 .dropdown_footer:hover .conteudo_dropdown_footer {
     display: block;
 } 
+#search_footer {
+    width: 60%;
+    background-color: #080808;
+    color: #fff;
+    border: #dadada 1px solid;
+    border-radius: 2px;
+    font-size: 0.6em;
+    padding: 5px;
+    margin-top: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+  }
+#search_footer:focus {
+    color: #dd5d26;
+    background-color: #dadada;
+}
+#search_footer::placeholder{
+    color: #dadadad5;
+}
+.rede_social{
+    margin-bottom: 5%;
+    background-color: #080808;
+    border:none;
+}

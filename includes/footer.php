@@ -9,8 +9,7 @@
         </figure>
         <span class="grid-item-footer" id="footer_titulo">Caverna da Quimera</span>
         <form class="grid-item-footer" id="form-footer-busca" method="POST" action="pesquisa.php">
-            <input type="text" size= "26" name="busca_assunto" id="busca_assunto" placeholder="Procurar...">
-            <input type="submit" value="Buscar"><br><br>
+            <input type="text" size= "26" name="busca_assunto" id="search_footer"  placeholder="Procurar...">
         </form> 
     </h1>
 
@@ -29,8 +28,8 @@
     </nav>
     <div class="grid-container-footer-info" id="footer_info">
         <p class="grid-item-footer-info">© 2022 Caverna da Quimera - Cinema, Séries, Games, Livros e Quadrinhos</p>
-        <a id="facebook" class="grid-item-footer-info" href="http://www.facebook.com">Facebook</a>
-        <a id="instagram" class="grid-item-footer-info" href="http://www.instagram.com">Instagram</a>
-        <a id="twitter" class="grid-item-footer-info" href="http://www.twitter.com">Twitter</a>
+        <button id="facebook" class="grid-item-footer-info rede_social" type="button"> <img src="midia/facebook.png" width="32" height ="auto" /></button>
+        <button id="Instagram" class="grid-item-footer-info rede_social" type="button"> <img src="midia/instagram.png" width="32" height ="auto" /></button>
+        <button id="Twitter" class="grid-item-footer-info rede_social" type="button"> <img src="midia/twitter.png" width="32" height ="auto" /></button>
     </div>
 </footer>

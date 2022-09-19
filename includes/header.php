@@ -5,16 +5,17 @@
     <link rel="stylesheet" type="text/css" href="css/padrao.css">
     <script src="js/jQuery/jquery_base.js"></script>
     <script src="js/script.js"></script>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap/bootstrap.css'>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
 </head>
-<header>
+<header id="header">
     <h1 class="grid-container-header" id="header_cabecario_h1">
         <figure class="grid-item-header">
             <img width="80px" src="midia/quimera_logo.png" />
         </figure>
         <span class="grid-item-header" id="header_titulo">Caverna da Quimera</span>
         <form class="grid-item-header" id="form-header-busca" method="POST" action="pesquisa.php">
-            <input type="text" size= "26" name="busca_assunto" id="busca_assunto" placeholder="Procurar...">
-            <input type="submit" value="Buscar"><br><br>
+            <input id="search_header" type="text" size= "26" name="busca_assunto"  placeholder="Procurar...">
         </form> 
     </h1>
     <nav id="header_nav">
@@ -36,6 +37,7 @@
 
     </nav>
 </header>
+
 
 
 
