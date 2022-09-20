@@ -130,7 +130,7 @@ $conexao = fazconexao();
             </div>
           </div>
 
-          <h4 style="margin-top:1em;" class="mb-4">Informações pessoais</h4>
+          <h4 class="mb-4 espaco-titulo-2">Informações pessoais</h4>
 
           <div class="col-12">
               <label for="erro_assunto" class="form-label">Escolha um Assunto</label>
@@ -139,13 +139,15 @@ $conexao = fazconexao();
                 <option value="lentidao">Estou enfrentando problemas com lag ou lentidão ao carregador os dados no site.</option>
                 <option value="css">O design do site está sendo mostrado de maneira incorreta, dificultando minha navegação</option>
                 <option value="funcionalidade">Uma função do site não está respondendo aos comandos ou funcionando da maneira correta.</option>
+                <option value="outros">Outros.</option>
+
               </select>
               <div class="invalid-feedback">
                 Por favor selecione um assunto.
               </div>
             </div>
           
-            <div style="margin-top:1em;" class="col-12">
+            <div class="col-12 espaco-titulo-2">
               <label for="erro_desc" class="form-label">Descreva o erro</label>
               <textarea style="border-radius:5px ;" name="erro_descricao" class="form-text" id="erro_desc" required></textarea>
               <div class="invalid-feedback">

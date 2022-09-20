@@ -3,18 +3,20 @@ require_once("includes/header.php");
 
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
-echo "<button id='cadastro_nova_noticia' class='btn btn-primary' style='margin-left:1em;'><a href='form_cad_noticia.php'>Cadastrar novas notícias</a></button>";
-
-echo "<h1 class='espaco-titulo'> Editar Notícias </h1>";
-
 include("controllers/funcoes_db.php");
 $conexao=fazconexao();
 
+echo "<div class='py-5 text-center'>";
+echo "<div class='col-md-7 col-lg-10'>";
+echo "<button id='cadastro_nova_noticia' class='btn btn-primary  col-lg-3 col-md-7777'><a href='form_cad_noticia.php'>Cadastrar novas notícias</a></button>";
 
+echo "<h1 class='espaco-titulo col-md-4 col-lg-6'> Editar Notícias </h1>";
+
+echo "</div>";
 echo "<form class='espaco-titulo' method='POST' action='pesquisa_edicao.php'>";
         echo "<input type='text' size= '26' name='busca_noticia_editar' id='busca_noticia_editar' placeholder='Buscar notícia para edição'>";
-        echo "<input type='submit' value='Buscar'><br><br>";
 echo "</form>";
+echo "</div>";
 
 $query_options = "select * from categorias WHERE (1=1)";
 $options=ConsultaSelectAll($query_options);

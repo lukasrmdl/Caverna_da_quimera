@@ -1,3 +1,25 @@
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+  #formSuporte {
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 95% 100% 50%;
+    align-items: center;
+  }
+  #file{
+    margin-top: 1em;
+  }
+  #button-cadastrar-noticia{
+    margin-top:1em;
+    margin-bottom: 10em;
+  }
+  #link_novoregistro_login{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #img_seta{
+    width: 1.3em;
+    height: auto;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
@@ -26,21 +48,27 @@ input, select, textarea {
   background-color: #000;
   color: #dadadad5 ;
 }
+textarea{
+  padding-left: 0.4em;
+  padding-top:0.5em;
+}
 #home_body .home, #filmes_body .filmes, #suporte_body .suporte{
   background-color: #000 ;
-  color: #fff;
-  border-bottom: 0.5px solid #fff;
+  color: #fe6c2b;
+  border-bottom: 0.5px solid #fe6c2b;
 }
 #home_body .home:hover, #filmes_body .filmes:hover, #suporte_body .suporte:hover{
-  color: #fff;
+  color: #fe6c2b;
+  border-bottom: 0.5px solid #fe6c2b;
 }
 #series_body .series, #games_body .games, #livros_body .livros, #hqs_body .hqs{
   background-color: #000 ;
-  color: #fff;
-  border-bottom: 0.5px solid #fff;
+  color: #fe6c2b;
+  border-bottom: 0.5px solid #fe6c2b;
 }
 #series_body .series:hover, #games_body .games:hover, #livros_body .livros:hover, #hqs_body .hqs:hover{
-  color: #fff;
+  color: #fe6c2b;
+  border-bottom: 0.5px solid #fe6c2b;
 }
 #carousel_next,#carousel_prev{
   background-color: #08080888 ;
@@ -70,8 +98,26 @@ input, select, textarea {
 #cadastro_nova_noticia a:hover{
   color: #fff;
 }
-#formSuporte {
-  grid-template-columns: auto auto auto ;
-  grid-template-rows: 95% 100% 50%;
-  align-items: center;
-};
+#busca_noticia_editar {
+  width: 60%;
+  color: #dadada;
+  background-color: #080808;
+  outline: 0;
+  border-bottom:#dadada 1px solid;
+  border-radius: 2px;
+  font-size: 1em;
+  padding: 5px;
+  margin-top: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#busca_noticia_editar:focus {
+  color: #dadada;
+  background-color: #080808;
+  outline: 0;
+  border-bottom:#fe6c2b 1px solid;
+}
+#busca_noticia_editar::placeholder{
+  color: #dadadad5;
+}

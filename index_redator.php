@@ -24,17 +24,17 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
         </div>
     </div>
 
-    <div style="margin-top: 0.5em;" class="col-md-7 col-lg-5">
+    <div class="col-md-7 col-lg-5 espaco-titulo-2">
         <label for="senha" class="form-label">Senha</label>
         <input  type="password" name="senha" class="form-control" id="senha" placeholder="********">
         <div class="invalid-feedback">
         Por favor informe a sua senha.
         </div>
     </div>
-    <div style="margin-top:1em;" class="col-md-77 col-lg-5">
+    <div class="col-md-77 col-lg-5 espaco-titulo-3">
         <input class="btn btn-primary col-lg-3 " type="submit" name="botao" value="Logar">
         <input class="btn btn-secondary col-lg-3 "  type="reset" name="botao" value="Limpar">
-        <a id="link_novoregistro_login" href="form_cad_redator.php" class="botao_novo_cadastro_login btn btn-primary col-lg-5 ">Novo Redator</a>
+        <a id="link_novoregistro_login" href="form_cad_redator.php" class="botao_novo_cadastro_login btn btn-primary col-lg-55 ">Novo Redator</a>
 
     </div>
 

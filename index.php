@@ -32,7 +32,7 @@ $conexao = fazconexao();
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Últimas notícias sobre os fatos mais importantes do mundo Geek</h1>
-            <p>Assine a nossa newsletter, receba nossos conteúdos exclusivos e fique por dentro de tudo sobre o mundo geek e as ultimas novidades sobre a cultura pop!.</p>
+            <p>Assine a nossa newsletter, receba nossos conteúdos exclusivos e fique por dentro de tudo sobre o mundo geek e as ultimas novidades sobre a cultura pop!</p>
             <p><a class="btn btn-lg btn-primary" href="#">Assine hoje</a></p>
           </div>
         </div>
@@ -108,30 +108,30 @@ $conexao = fazconexao();
 
     <div class="container marketing">
     
-    <h1 style='margin-top:0.2em;'> Sobre nós </h1>
+    <h1 class="espaco-titulo-1"> Sobre nós </h1>
 
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/lukas.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+        <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/lukas.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
         <h2>Lukas Raphael - Dev</h2>
-        <p>Sou de Pelotas e estou aprendendo a programar, Suporte técnico na Globosolution Softwares ERP cursando TSI pelo IFsul.  </p>
-        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/lukas-raphael-mendes-duarte-lourencon-78784b1b9/">Ver mais &raquo;</a></p>
+        <p>Sou de Pelotas e estou aprendendo a programar, cursando TSI pelo IFsul.  </p>
+        <p><a class="btn btn-primary" href="https://www.linkedin.com/in/lukas-raphael-mendes-duarte-lourencon-78784b1b9/">Ver mais &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/eduardo.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
         <h2>Eduardo Teixeira - UX</h2>
         <p>Um programador novo que esta cursando TSI no IFsul e que adorá café!</p>
-        <p><a class="btn btn-secondary" href="https://www.geradordepersonas.com.br/result-840OZ-7662BW.html">Ver mais &raquo;</a></p>
+        <p><a class="btn btn-primary" href="https://www.geradordepersonas.com.br/result-840OZ-7662BW.html">Ver mais &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/elisa.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
         <h2>Elisa Oliveira - DBA</h2>
         <p>Uma estudante das artes e da modelagem de banco de dados, viciada em Novels.</p>
-        <p><a class="btn btn-secondary" href="#">Ver mais &raquo;</a></p>
+        <p><a class="btn btn-primary" href="#">Ver mais &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 

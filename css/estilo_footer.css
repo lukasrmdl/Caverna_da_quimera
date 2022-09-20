@@ -3,6 +3,8 @@
     padding:0;
     margin:0;
 }
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
 .grid-container-footer {
     display: grid;
     grid-template-columns: auto auto auto ;
@@ -62,7 +64,7 @@
     font-size: 1.2rem;
 
 }
-#footer_nav a, #footer_nav a:link, #footer_nav a:visited {
+#footer_nav a, #footer_nav a:link{
     background-color: #000000c7;
     color: #dadada;
     text-align: center;
@@ -71,12 +73,12 @@
 
 #footer_nav a:hover {
     text-decoration: none;
-    border-bottom: 0.5px solid #fff;
-    color: #fff;
+    border-bottom: 0.5px solid #fe6c2b;
+    color: #fe6c2b;
 }
 #footer_nav a:active {
     text-decoration: none;
-    color: #fff;
+    color: #fe6c2b;
     border-bottom: 0px solid;
 }
 
@@ -114,7 +116,7 @@
     width: 60%;
     background-color: #080808;
     color: #fff;
-    border: #dadada 1px solid;
+    border: #dadada 2px solid;
     border-radius: 2px;
     font-size: 0.6em;
     padding: 5px;
@@ -125,8 +127,10 @@
 
   }
 #search_footer:focus {
-    color: #dd5d26;
-    background-color: #dadada;
+    color: #dadada;
+    background-color: #080808;
+    outline: 0;
+    border-bottom:#fe6c2b 2px solid;
 }
 #search_footer::placeholder{
     color: #dadadad5;
@@ -136,3 +140,142 @@
     background-color: #080808;
     border:none;
 }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: 80% 110% 40%;
+        align-items: center;
+        margin-top: 2em;
+     }
+    .grid-item-footer {
+        text-align: center;
+        align-items: center;
+    }
+    .grid-container-footer-info {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 100% 40% 40% 40%;
+        grid-area: footer;
+     }
+    .grid-item-footer-info {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer_h1 {
+        background-color: #080808;
+    }
+    #footer_h1 span {
+        font-family: 'Noto Serif', sans-serif;
+        font-size: 2.5rem;
+        color: #dadadad5;
+    
+    }
+    #footer_h1 img{
+        width: 6rem;
+        vertical-align: bottom;
+    }
+    #form-footer-busca{
+            width: 110%;
+    }
+    #footer_nav {
+        list-style-type: none;
+        background-color: #000;
+    }
+    #footer_nav ul {
+        overflow: hidden;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+    }
+    #footer_nav li {
+        display: inline;
+        float: left;
+    }
+    #footer_nav li a {
+        text-decoration: none;
+        display: block;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    
+    }
+    #footer_nav a, #footer_nav a:link, #footer_nav a:visited {
+        color: #fff;
+        background-color: #000000c7;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    #footer_nav a:hover {
+        text-decoration: none;
+        border-bottom: 0.5px solid #fff;
+        color: #fe6c2b;
+    }
+    #footer_nav a:active {
+        text-decoration: none;
+        color: #fe6c2b;
+        border-bottom: 0px solid;
+    }
+    
+    .dropdown_footer ul {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    }
+    .dropdown_footer li{
+        float: left;
+    }
+    .dropdown_footer li a {
+        text-decoration: none;
+        padding: 6px 16px;
+        display: block;
+    }
+    .conteudo_dropdown_footer {
+        display: none;
+        position: absolute;
+        min-width: 100px;
+    }
+    .conteudo_dropdown_footer li{
+        float: none;
+    }
+    .conteudo_dropdown_footer a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown_footer:hover .conteudo_dropdown_footer {
+        display: block;
+    } 
+    #search_footer {
+        width: 60%;
+        background-color: #080808;
+        color: #fff;
+        border: #dadada 1px solid;
+        border-radius: 2px;
+        font-size: 0.6em;
+        padding: 5px;
+        margin-top: 15px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    
+      }
+    #search_footer:focus {
+        color: #dadada;
+        background-color: #080808;
+        outline: 0;
+        border-bottom:#fe6c2b 1px solid;
+    }
+    #search_footer::placeholder{
+        color: #dadadad5;
+    }
+    .rede_social{
+        margin-bottom: 5%;
+        background-color: #080808;
+        border:none;
+    }
+    }
