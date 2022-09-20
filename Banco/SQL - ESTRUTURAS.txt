@@ -1,3 +1,5 @@
+CREATE DATABASE projeto_final_banco;
+
 CREATE TABLE categorias (
 nome VARCHAR(30) NOT NULL PRIMARY KEY);
 
@@ -43,9 +45,24 @@ CREATE TABLE recuperacao (
 CREATE TABLE redator(
 id_redator INT AUTO_INCREMENT PRIMARY KEY,
 nome_redator VARCHAR(30) NOT NULL,
-email_redator VARCHAR(40) UNIQUE,
+email_redator VARCHAR(140) UNIQUE,
 senha_redator VARCHAR(255),
 foto_redator VARCHAR(100),
 tipousuario INT DEFAULT 2,
 status BOOLEAN DEFAULT FALSE
 );
+
+CREATE TABLE suporte_envios(
+id_envio INT AUTO_INCREMENT PRIMARY KEY,
+nome_usuario VARCHAR(30) NOT NULL,
+sobrenome_usuario VARCHAR(30) NOT NULL,
+email_usuario VARCHAR(140),
+endereco_usuario VARCHAR(80) NOT NULL,
+logradouro_usuario VARCHAR(140),
+estado_usuario VARCHAR(50) NOT NULL,
+cidade_usuario VARCHAR(50) NOT NULL,
+cep_usuario VARCHAR (30) NOT NULL,
+erro_assunto VARCHAR(50) NOT NULL,
+erro_descricao text NOT NULL
+);
+

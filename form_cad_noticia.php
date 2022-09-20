@@ -14,7 +14,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 <script src="funcoes_ajax.js"> </script>
 
 <body>
-    <h1> Cadastar nova Notícia </h1>
+    <h1 class="espaco-titulo"> Cadastar nova Notícia </h1>
     <hr class="featurette-divider">
     <div class="row featurette">
     <div class="col-md-7">

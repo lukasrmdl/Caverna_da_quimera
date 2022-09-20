@@ -806,6 +806,18 @@ progress {
   width: 100%;
 }
 
+.botao_link {
+  text-decoration:none; 
+  color:#fff;
+}
+.botao_link:hover {
+  text-decoration:none; 
+  color:#dadada;
+}
+.botao_link:active {
+  text-decoration:none; 
+  color:#fe6c2b;
+}
 .offset-1 {
   margin-left: 8.33333333%;
 }
@@ -1142,8 +1154,15 @@ progress {
   .col-md-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
-    margin-left: 1em;
-
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .col-md-77 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 1em;
   }
   .col-md-8 {
     flex: 0 0 auto;
@@ -5360,7 +5379,9 @@ textarea.form-control-lg {
   overflow-y: auto;
   outline: 0;
 }
-
+#link_novoregistro_login{
+  margin-left: 2em;
+};
 .modal-dialog {
   position: relative;
   width: auto;
@@ -9649,6 +9670,10 @@ textarea.form-control-lg {
   .mx-lg-auto {
     margin-right: auto !important;
     margin-left: auto !important;
+  }
+  .espaco-titulo {
+    margin-left:0.5em;
+    margin-top:0.2em;
   }
   .my-lg-0 {
     margin-top: 0 !important;

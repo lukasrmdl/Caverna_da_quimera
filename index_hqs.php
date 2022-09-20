@@ -16,7 +16,7 @@ $sql = "SELECT * FROM noticias WHERE nomecategoria = 'Quadrinhos'";
 
 $resultados = ConsultaSelectAll($sql);
 
-echo "<h1 style='margin-left:0.4em;'> Home >> Quadrinhos </h1>";
+echo "<h1 class='espaco-titulo'> Home >> Quadrinhos </h1>";
 
 
 foreach($resultados as $linha) {

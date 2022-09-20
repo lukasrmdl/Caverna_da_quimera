@@ -31,7 +31,6 @@ foreach($resultados as $linha) {
             <p>Sobrenome do autor : <input readonly placeholder="Silva" type="text" name="sobrenome_autor" value="<?php echo $linha['sobrenome']?>"></p>
             <p>Email do autor : <input readonly placeholder="fulano@hotmail.com" type="email" name="email_autor" value="<?php echo $linha['email']?>"></p>
 
-            <button type="submit" name="botao" value="Acessar"> Acessar </button>
         </form>
     </section>
 <?php

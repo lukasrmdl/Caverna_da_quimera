@@ -5,7 +5,6 @@ $query = "";
 $nomeprod = $_POST['busca_assunto'];
 
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
-echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
 
 $sql = "SELECT * FROM noticias WHERE (1=1) ";
@@ -18,7 +17,7 @@ if ($_POST['busca_assunto'] != "") {
 
 $resultados = ConsultaSelectAll($sql);
 
-echo "<h1> Resultados para a busca </h1>";
+echo "<h1 class='espaco-titulo'> Resultados para a busca </h1>";
 
 foreach($resultados as $linha) {
 ?>
@@ -31,7 +30,7 @@ foreach($resultados as $linha) {
 <?php echo "<h2 name='titulo_noticia' class='featurette-heading'>$linha[titulo]</h2>"?>
 <?php echo "<h3 class='text-muted'>$linha[subtitulo]</h3>"?>
 <?php echo "<textarea disabled class='lead'>$linha[texto]</textarea><p><a class='btn2 btn-primary' href='http://localhost/caverna_da_quimera/Acesso_noticia.php?acessa_noticia=$linha[idnoticia]'>Acessar</a></p>"?>
-<?php echo "<p class='autor lead'>Autor: $linha[nome] $linha[sobrenome], $linha[data]</p>" ?>
+<?php echo "<p class='autor lead'>Autor: $linha[nome] $linha[sobrenome],  $linha[data]</p>" ?>
 
 </div>
 <div class="col-md-5">

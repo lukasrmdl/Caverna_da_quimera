@@ -5,13 +5,13 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
 echo "<button id='cadastro_nova_noticia' class='btn btn-primary' style='margin-left:1em;'><a href='form_cad_noticia.php'>Cadastrar novas notícias</a></button>";
 
-echo "<h1 style='margin-left:0.4em;'> Editar Notícias </h1>";
+echo "<h1 class='espaco-titulo'> Editar Notícias </h1>";
 
 include("controllers/funcoes_db.php");
 $conexao=fazconexao();
 
 
-echo "<form style='margin-left:1em;' method='POST' action='pesquisa_edicao.php'>";
+echo "<form class='espaco-titulo' method='POST' action='pesquisa_edicao.php'>";
         echo "<input type='text' size= '26' name='busca_noticia_editar' id='busca_noticia_editar' placeholder='Buscar notícia para edição'>";
         echo "<input type='submit' value='Buscar'><br><br>";
 echo "</form>";

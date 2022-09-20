@@ -77,7 +77,7 @@ $conexao = fazconexao();
 
             $resultados1 = ConsultaSelectAll($sql1);
 
-            echo "<h1 style='margin-left:0.5em;margin-top:0.2em;'> Ultimas notícias </h1>";
+            echo "<h1 class='espaco-titulo'> Ultimas notícias </h1>";
 
             foreach($resultados1 as $linha) {
         ?>

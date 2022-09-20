@@ -18,7 +18,7 @@ if ($_POST['busca_noticia_editar'] != "") {
 
 $resultados = ConsultaSelectAll($sql);
 
-echo "<h1> Resultados para a busca </h1>";
+echo "<h1 class='espaco-titulo'> Resultados para a busca </h1>";
 
 echo "<form method='POST' action='pesquisa_edicao.php'>";
         echo "<input type='text' size= '26' name='busca_noticia_editar' id='busca_noticia_editar' placeholder='Nova busca'>";
