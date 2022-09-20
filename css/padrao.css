@@ -121,3 +121,10 @@ textarea{
 #busca_noticia_editar::placeholder{
   color: #dadadad5;
 }
+.erro {
+  font-weight: bold;
+  color: black;
+  background-color: #d43b2d;
+  margin-top:2em;
+  text-align:center;
+}

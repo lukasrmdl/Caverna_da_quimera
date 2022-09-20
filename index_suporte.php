@@ -15,18 +15,117 @@ $conexao = fazconexao();
     <meta name="generator" content="Hugo 0.101.0">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
     <script src="js/funcoes_ajax.js"></script>
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="form-validation.css" rel="stylesheet">
+    <style>
+        .erro {
+            font-weight: bold;
+            color: black;
+            background-color: lightpink;
+        }
+        
+    </style>
+    <script src="funcoes_ajax.js"> </script>
+    <script type="text/javascript">
+      function validar(){
+      var erro="";
+
+      var nome = document.getElementById( "firstName" );
+      if( nome.value == ""){
+        erro = " O campo Primeiro nome é de preenchimento Obrigatorio!";
+        document.getElementById( "error_para" ).innerHTML = erro;
+        return false;
+        }
+      var sobrenome = document.getElementById( "lastName" );
+      if( sobrenome.value == ""){
+        erro = " O campo Sobrenome é de preenchimento Obrigatorio!";
+        document.getElementById( "error_para" ).innerHTML = erro;
+        return false;
+        }
+        var nickname = document.getElementById( "username" );
+        if( nickname.value == "")
+        {
+          erro = " O campo Nome de usuário é de preenchimento Obrigatorio ";
+          document.getElementById( "error_para" ).innerHTML = erro;
+          return false;
+        }
+
+          var email = document.getElementById( "email" );
+          if( email.value == "" )
+          {
+            erro = " O campo do email do Usuario é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+
+          var endereco = document.getElementById( "endereco" );
+          if( endereco.value == "" )
+          {
+            erro = " O campo do endereço é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var endereco = document.getElementById( "endereco" );
+          if( endereco.value == "" )
+          {
+            erro = " O campo do endereço é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var estado  = document.getElementById( "estados" );
+          if( estado.value == "" )
+          {
+            erro = " O campo do estado é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var cidade  = document.getElementById( "cidades" );
+          if( cidade.value == "" )
+          {
+            erro = " O campo da cidade é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var cep  = document.getElementById( "cep" );
+          if( cep.value == "" )
+          {
+            erro = " O campo do cep é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var cep  = document.getElementById( "cep" );
+          if( cep.value == "" )
+          {
+            erro = " O campo do cep é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var assunto  = document.getElementById( "erro_assunto" );
+          if( assunto.value == "" )
+          {
+            erro = " O assunto da solicitação é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          var desc  = document.getElementById( "erro_desc" );
+          if( desc.value == "" )
+          {
+            erro = " a descrição do erro é de preenchimento Obrigatorio ";
+            document.getElementById( "error_para" ).innerHTML = erro;
+            return false;
+          }
+          else
+          {
+            return true;
+          }
+    }
+
+    </script>
   </head>
   <body class="bg-dark">
     
 <div class="container">
   <main>
-  <?php
-    session_start();
-
-    ?>
     <?php
     echo "<div style='text-align:center; id='msg'>";
 
@@ -43,22 +142,16 @@ $conexao = fazconexao();
       </div>
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Informações pessoais</h4>
-        <form class="needs-validation" action="controllers/controller_suporte.php" method="POST" enctype="multipart/form-data novalidate">
+        <form onsubmit="return validar();" action="controllers/controller_suporte.php" method="POST" enctype="multipart/form-data ">
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Primeiro nome</label>
               <input name="nome_usuario" type="text" class="form-control" id="firstName" placeholder="Eduardo" value="" required>
-              <div class="invalid-feedback">
-                Um nome válido é necessário.
-              </div>
             </div>
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Ultimo nome</label>
               <input name="sobrenome_usuario" type="text" class="form-control" id="lastName" placeholder="Lima" value="" required>
-              <div class="invalid-feedback">
-              Um ultimo nome válido é necessário.
-              </div>
             </div>
 
             <div class="col-12">
@@ -66,26 +159,17 @@ $conexao = fazconexao();
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
                 <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required>
-              <div class="invalid-feedback">
-              Um nome de usuário válido é necessário.
-                </div>
               </div>
             </div>
 
             <div class="col-12">
-              <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+              <label for="email" class="form-label">Email</label>
               <input name="email_usuario" type="email" class="form-control" id="email" placeholder="voce@exemplo.com">
-              <div class="invalid-feedback">
-                Por favor informe um email válido.
-              </div>
             </div>
 
             <div class="col-12">
               <label for="endereco" class="form-label">Endereço</label>
               <input name="endereco_usuario" type="text" class="form-control" id="endereco" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Por favor informe o seu endereço.
-              </div>
             </div>
 
             <div class="col-12">
@@ -106,9 +190,6 @@ $conexao = fazconexao();
                 ?>
 
               </select>
-              <div class="invalid-feedback">
-                Por favor selecione um estado.
-              </div>
             </div>
 
             <div class="col-md-4">
@@ -116,17 +197,11 @@ $conexao = fazconexao();
               <select name="cidade_usuario" class="form-select" id="cidades" required>
                 <option selected disabled value="">-</option>
               </select>
-              <div class="invalid-feedback">
-                Por favor selecione uma cidade.
-              </div>
             </div>
 
             <div class="col-md-3">
               <label for="cep" class="form-label">Cep</label>
               <input name="cep_usuario" type="text" class="form-control" id="cep" placeholder="00000-000" required>
-              <div class="invalid-feedback">
-                codigo CEP é necessário.
-              </div>
             </div>
           </div>
 
@@ -142,17 +217,11 @@ $conexao = fazconexao();
                 <option value="outros">Outros.</option>
 
               </select>
-              <div class="invalid-feedback">
-                Por favor selecione um assunto.
-              </div>
             </div>
           
             <div class="col-12 espaco-titulo-2">
               <label for="erro_desc" class="form-label">Descreva o erro</label>
               <textarea style="border-radius:5px ;" name="erro_descricao" class="form-text" id="erro_desc" required></textarea>
-              <div class="invalid-feedback">
-                Por favor descreva o erro.
-              </div>
             </div>
 
           <hr class="my-4">
@@ -162,6 +231,7 @@ $conexao = fazconexao();
           </div>
 
           <hr class="my-4">
+          <p class="erro" id="error_para" ></p></br>
 
           <button class="w-100 btn btn-primary btn-lg" value="enviar" name="botao" type="submit">Enviar Solicitação</button>
         </form>

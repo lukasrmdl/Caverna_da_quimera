@@ -4,7 +4,33 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 ?>
 
 <html>
+<head>
+    <script src="funcoes_ajax.js"> </script>
+    <script type="text/javascript">
+      function validar(){
+      var erro="";
 
+      var email = document.getElementById( "email" );
+      if( email.value == ""){
+        erro = " O campo do email é de preenchimento Obrigatorio!";
+        document.getElementById( "error_para" ).innerHTML = erro;
+        return false;
+        }
+      var senha = document.getElementById( "senha" );
+      if( senha.value == ""){
+        erro = " O campo da senha é de preenchimento Obrigatorio!";
+        document.getElementById( "error_para" ).innerHTML = erro;
+        return false;
+        }
+
+          else
+          {
+            return true;
+          }
+    }
+
+    </script>
+</head>
 <body>
     <?php
     session_start();
@@ -14,22 +40,18 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
       <img class="d-block mx-auto mb-4" src="midia/quimera_logo.png" alt="" width="72" height="67">
       <h2>Login</h2>
     </div>
-    <form action="controllers/controller_redator.php" method="POST">
+    <form onsubmit="return validar();" action="controllers/controller_redator.php" method="POST">
 
     <div class="col-md-7 col-lg-5">
         <label for="email" class="form-label">Email</label>
         <input type="text" name="email" class="form-control" id="email" placeholder="redator@quimera.com">
-        <div class="invalid-feedback">
-        Por favor informe um email válido.
-        </div>
+
     </div>
 
     <div class="col-md-7 col-lg-5 espaco-titulo-2">
         <label for="senha" class="form-label">Senha</label>
         <input  type="password" name="senha" class="form-control" id="senha" placeholder="********">
-        <div class="invalid-feedback">
-        Por favor informe a sua senha.
-        </div>
+
     </div>
     <div class="col-md-77 col-lg-5 espaco-titulo-3">
         <input class="btn btn-primary col-lg-3 " type="submit" name="botao" value="Logar">
@@ -40,12 +62,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
     </form >
     <div id='msg'>
-        <?php
-        if (isset($_SESSION['msg'])) {
-            echo $_SESSION['msg'];
-            unset($_SESSION['msg']);
-        }
-        ?>
+    <p class="erro" id="error_para" ></p>
     </div>
 </body>
 
