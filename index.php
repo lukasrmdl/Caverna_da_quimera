@@ -31,7 +31,7 @@ $conexao = fazconexao();
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Últimas notícias sobre os fatos mais importantes do mundo Geek</h1>
+            <h1>Últimas notícias sobre os fatos mais importantes do mundo Nerd</h1>
             <p>Assine a nossa newsletter, receba nossos conteúdos exclusivos e fique por dentro de tudo sobre o mundo geek e as ultimas novidades sobre a cultura pop!</p>
             <p><a class="btn btn-lg btn-primary" href="#">Assine hoje</a></p>
           </div>
@@ -88,7 +88,7 @@ $conexao = fazconexao();
 
 <div class="row noticia-post d-flex">
       <div class="col-md-77 noticia-post-img">
-        <?php echo '<img class="bd-placeholder-img bd-placeholder-img-lg  mx-auto" width="80%" height="100%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
+        <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="75%" height="75%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
       </div>
       <div class="col-md-7 noticia-post-info">
         <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">
@@ -124,14 +124,14 @@ $conexao = fazconexao();
       <div class="col-lg-4">
       <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/eduardo.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
-        <h2>Eduardo Teixeira - UX</h2>
+        <h2>Valentin Teixeira - UX</h2>
         <p>Um programador novo que esta cursando TSI no IFsul e que adorá café!</p>
         <p><a class="btn btn-primary" href="https://www.geradordepersonas.com.br/result-840OZ-7662BW.html">Ver mais &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
       <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/elisa.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
 
-        <h2>Elisa Oliveira - DBA</h2>
+        <h2>Elisa Cairolli - DBA</h2>
         <p>Uma estudante das artes e da modelagem de banco de dados, viciada em Novels.</p>
         <p><a class="btn btn-primary" href="#">Ver mais &raquo;</a></p>
       </div><!-- /.col-lg-4 -->

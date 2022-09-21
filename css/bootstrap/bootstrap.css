@@ -239,13 +239,6 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
-}
-a:hover {
-  color: var(--bs-link-hover-color);
-}
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -7731,6 +7724,10 @@ textarea.form-control-lg {
   margin-left: 3rem !important;
 }
 
+.mx-auto-2 {
+  margin-right: auto !important;
+  margin-left: 2em;
+}
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;

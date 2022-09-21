@@ -11,9 +11,9 @@
 <header id="header">
     <h1 class="grid-container-header" id="header_cabecario_h1">
         <figure class="grid-item-header">
-            <img width="80px" src="midia/quimera_logo.png" />
+            <a id="header_img" href="index.php"><img width="80px" src="midia/quimera_logo.png" /></a>
         </figure>
-        <span class="grid-item-header" id="header_titulo">Caverna da Quimera</span>
+        <a id="header_title" href="index.php"><span class="grid-item-header" id="header_titulo">Caverna da Quimera</span></a>
         <form class="grid-item-header" id="form-header-busca" method="POST" action="pesquisa.php">
             <input id="search_header" type="text" size= "26" name="busca_assunto"  placeholder="Procurar...">
         </form> 

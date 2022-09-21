@@ -31,6 +31,7 @@
         font-size: 3rem;
         margin-left: 2%;
         color: #dadadad5;
+        border:none;
     }
     #form-header-busca{
         width: 110%;
@@ -58,6 +59,19 @@
         font-size: 1.2rem;
     
     }
+    #header_title{
+        border: none;
+        text-decoration: none;
+        transition: 1s;
+    }
+    #header_title span:hover{
+        color: #fe6a2bc5;
+        filter: opacity(0.9) drop-shadow(0 0 0 rgb(211, 95, 0)); 
+    }
+    #header_img img:hover{
+        filter: grayscale(80%); 
+        filter: brightness(5);	
+    }
     #header_nav a, #header_nav a:link {
         background-color: #000000c7;
         color: #dadada;
@@ -67,13 +81,13 @@
     #header_nav a:hover {
         text-decoration: none;
         background-color: #000000;
-        border-bottom: 0.5px solid #fe6c2b;
         color: #fe6c2b;
+        border-bottom: 2px inset #fe6c2b;
     }
     #header_nav a:active {
         text-decoration: none;
         color: #fe6c2b;
-        border-bottom: 0px solid;
+        border-bottom: 2px inset #fe6c2b;
     }
     .dropdown_header ul {
         list-style-type: none;
@@ -95,6 +109,8 @@
         position: absolute;
         min-width: 100px;
         z-index: 3;
+        border-bottom: 0.3px inset #fe6c2b;
+
     }
     .conteudo_dropdown_header li{
         float: none;
@@ -111,9 +127,9 @@
     } 
     #search_header {
         width: 60%;
-        background-color: #080808;
+        background-color: transparent;
         color: #fff;
-        border: #dadada 2px solid;
+        border: #dadadaef 2px solid;
         border-radius: 2px;
         font-size: 0.6em;
         padding: 5px;
@@ -121,11 +137,13 @@
         border-top: none;
         border-left: none;
         border-right: none;
+        transition: 0.5s;
       }
     #search_header:focus {
         color: #dadada;
-        background-color: #080808;
+        background-color: transparent;
         outline: 0;
+        background-size: 100% 2p;
         border-bottom:#fe6c2b 2px solid;
     }
     #search_header::placeholder{
@@ -161,6 +179,7 @@
         font-size: 3rem;
         margin-left: 2%;
         color: #dadadad5;
+        border:none;
     }
     #form-header-busca{
         width: 110%;
@@ -199,7 +218,7 @@
     #header_nav a:hover {
         text-decoration: none;
         background-color: #000000;
-        border-bottom: 0.5px solid #fe6c2b;
+        border-bottom: 2px inset #fe6c2b;
         color: #fe6c2b;
     }
     #header_nav a:active {
@@ -227,6 +246,8 @@
         position: absolute;
         min-width: 100px;
         z-index: 3;
+        border-bottom: 0.3px inset #fe6c2b;
+
     }
     .conteudo_dropdown_header li{
         float: none;
