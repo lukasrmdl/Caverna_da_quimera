@@ -28,7 +28,6 @@ $conexao = fazconexao();
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="bd-placeholder-img" width="100%" height="100%" src="./midia/carousel/carousel_img1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
-
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Últimas notícias sobre os fatos mais importantes do mundo Nerd</h1>
@@ -38,7 +37,7 @@ $conexao = fazconexao();
         </div>
       </div>
       <div class="carousel-item">
-      <img class="bd-placeholder-img" width="100%" height="100%" src="./midia/carousel/carousel_img2.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></svg>
+      <img class="bd-placeholder-img" width="100%" height="100%" src="./midia/carousel/carousel_img2.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%"/></img>
 
         <div class="container">
           <div class="carousel-caption">
@@ -88,7 +87,7 @@ $conexao = fazconexao();
 
 <div class="row noticia-post d-flex">
       <div class="col-md-77 noticia-post-img">
-        <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="75%" height="75%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
+        <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="92%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
       </div>
       <div class="col-md-7 noticia-post-info">
         <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">

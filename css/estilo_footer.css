@@ -27,6 +27,19 @@
     margin-left: auto;
     margin-right: auto;
 }
+#footer_title{
+    border: none;
+    text-decoration: none;
+    transition: 1s;
+}
+#footer_title span:hover{
+    color: #fe6a2bc5;
+    filter: opacity(0.9) drop-shadow(0 0 0 rgb(211, 95, 0)); 
+}
+#footer_img img:hover{
+    filter: grayscale(80%); 
+    filter: brightness(5);	
+}
 
 #footer_h1 {
     background-color: #080808;

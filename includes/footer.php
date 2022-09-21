@@ -5,9 +5,10 @@
 
     <h1 class="grid-container-footer" id="footer_h1">
         <figure class="grid-item-footer">
-            <img width="80px" src="midia/quimera_logo.png" />
+            <a id="footer_img" href="index.php"><img width="80px" src="midia/quimera_logo.png" /></a>
         </figure>
-        <span class="grid-item-footer" id="footer_titulo">Caverna da Quimera</span>
+        <a id="footer_title" href="index.php"><span class="grid-item-footer">Caverna da Quimera</span></a>
+
         <form class="grid-item-footer" id="form-footer-busca" method="POST" action="pesquisa.php">
             <input type="text" size= "26" name="busca_assunto" id="search_footer"  placeholder="Procurar...">
         </form> 
