@@ -67,12 +67,12 @@
     #header_nav a:hover {
         text-decoration: none;
         background-color: #000000;
-        border-bottom: 0.5px solid #ff9b70;
-        color: #ff9b70;
+        border-bottom: 0.5px solid #fe6c2b;
+        color: #fe6c2b;
     }
     #header_nav a:active {
         text-decoration: none;
-        color: #ff9b70;
+        color: #fe6c2b;
         border-bottom: 0px solid;
     }
     .dropdown_header ul {
@@ -199,12 +199,12 @@
     #header_nav a:hover {
         text-decoration: none;
         background-color: #000000;
-        border-bottom: 0.5px solid #ff9b70;
-        color: #ff9b70;
+        border-bottom: 0.5px solid #fe6c2b;
+        color: #fe6c2b;
     }
     #header_nav a:active {
         text-decoration: none;
-        color: #ff9b70;
+        color: #fe6c2b;
         border-bottom: 0px solid;
     }
     .dropdown_header ul {

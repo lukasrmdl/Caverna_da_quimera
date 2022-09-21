@@ -203,7 +203,7 @@
     
     }
     #footer_nav a, #footer_nav a:link, #footer_nav a:visited {
-        color: #fff;
+        color: #dadada;
         background-color: #000000c7;
         text-align: center;
         text-decoration: none;
@@ -211,7 +211,7 @@
     
     #footer_nav a:hover {
         text-decoration: none;
-        border-bottom: 0.5px solid #fff;
+        border-bottom: 0.5px solid #fe6c2b;
         color: #fe6c2b;
     }
     #footer_nav a:active {
