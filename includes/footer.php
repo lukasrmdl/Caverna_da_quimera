@@ -29,8 +29,8 @@
     </nav>
     <div class="grid-container-footer-info" id="footer_info">
         <p class="grid-item-footer-info">© 2022 Caverna da Quimera - Cinema, Séries, Games, Livros e Quadrinhos</p>
-        <button id="facebook" class="grid-item-footer-info rede_social" type="button"> <img src="midia/facebook.png" width="32" height ="auto" /></button>
-        <button id="Instagram" class="grid-item-footer-info rede_social" type="button"> <img src="midia/instagram.png" width="32" height ="auto" /></button>
-        <button id="Twitter" class="grid-item-footer-info rede_social" type="button"> <img src="midia/twitter.png" width="32" height ="auto" /></button>
+        <a href="https://www.facebook.com/profile.php?id=100086211336364"><button id="facebook" class="grid-item-footer-info rede_social" type="button"><img src="midia/facebook.png" width="32" height ="auto" /></button></a>
+        <a href="https://www.instagram.com"><button id="Instagram" class="grid-item-footer-info rede_social" type="button"> <img src="midia/instagram.png" width="32" height ="auto" /></button></a>
+        <a href="https://twitter.com/i/flow/signup"><button id="Twitter" class="grid-item-footer-info rede_social" type="button"> <img src="midia/twitter.png" width="32" height ="auto" /></button></a>
     </div>
 </footer>

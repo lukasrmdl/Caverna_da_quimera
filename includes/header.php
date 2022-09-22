@@ -1,5 +1,6 @@
 <head>
     <title>Caverna da Quimera</title>
+    <link rel="shortcut icon" href="midia/quimera_logo.ico">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilo_header.css">
     <link rel="stylesheet" type="text/css" href="css/padrao.css">
