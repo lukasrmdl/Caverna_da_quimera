@@ -96,7 +96,7 @@ $conexao = fazconexao();
         <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">
         <?php echo "<h2 name='titulo_noticia' class='noticia-post-titulo'>$linha[titulo]</h2>"?>
         <?php echo "<h3 class='noticia-post-subtitulo'>$linha[subtitulo]</h3>"?>
-        <?php echo "<textarea disabled class='noticia-post-texto'>$linha[texto]</textarea><p><a class='btn2 btn-primary noticia-post-botao' href='http://localhost/caverna_da_quimera/Acesso_noticia.php?acessa_noticia=$linha[idnoticia]'>Ler mais</a></p>"?>
+        <?php echo "<textarea disabled class='noticia-post-texto '>$linha[texto]</textarea><p><a class='btn2 btn-primary noticia-post-botao' href='http://localhost/caverna_da_quimera/Acesso_noticia.php?acessa_noticia=$linha[idnoticia]'>Ler mais</a></p>"?>
         <?php echo "<p class='noticia-post-autor'>Autor: $linha[nome] $linha[sobrenome], $linha[data]</p>" ?>
       </div>
     </div>

@@ -22,7 +22,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
       <p class="lead">Preencha o formulário abaixo para concluir o cadastro.</p>
     </div>
     <div class="row featurette">
-    <div class="col-md-7">
+    <div class="col-md-7 new-col-mobile">
     <hr class="featurette-divider">
 
     <form action="controllers/controller_noticia.php" method="POST"  enctype="multipart/form-data">

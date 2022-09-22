@@ -143,7 +143,7 @@ $conexao = fazconexao();
       <p class="lead">Preencha o formulário abaixo para que a nossa equipe possa receber o seu Feedback.</p>
     </div>
       </div>
-      <div class="col-md-7 col-lg-8">
+      <div class="col-md-7 col-lg-8 new-col-mobile">
         <h4 class="mb-3">Informações pessoais</h4>
         <form onsubmit="return validar();" action="controllers/controller_suporte.php" method="POST" enctype="multipart/form-data ">
           <div class="row g-3">

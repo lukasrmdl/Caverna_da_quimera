@@ -201,7 +201,6 @@
     #header_nav li {
         display: inline;
         float: left;
-    
     }
     #header_nav li a {
         text-decoration: none;
@@ -260,13 +259,13 @@
         position: absolute;
         min-width: 100px;
         z-index: 3;
-        background-color: #311409;
+        background-color: #230f06;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
     .conteudo_dropdown_header li{
         float: none;
-        background-color: #311409;
+        background-color: #230f06;
 
     }
     .conteudo_dropdown_header a {

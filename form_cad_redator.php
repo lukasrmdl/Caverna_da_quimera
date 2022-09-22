@@ -16,7 +16,7 @@ require_once("includes/header.php");
     <form action="controllers/controller_redator.php" method="POST" enctype="multipart/form-data">
 
 
-        <div class="col-md-7 col-lg-5">
+        <div class="col-md-7 col-lg-5 new-col-mobile">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" name="nome" class="form-control" id="nome" placeholder="Lukas">
             <div class="invalid-feedback">
@@ -24,7 +24,7 @@ require_once("includes/header.php");
             </div>
         </div>
 
-        <div class="col-md-7 col-lg-5">
+        <div class="col-md-7 col-lg-5 new-col-mobile">
             <label for="email" class="form-label">Email</label>
             <input type="email" name="email" class="form-control" id="email" placeholder="teste@hotmail.com">
             <div class="invalid-feedback">
@@ -32,7 +32,7 @@ require_once("includes/header.php");
             </div>
         </div>
 
-        <div class="col-md-7 col-lg-5">
+        <div class="col-md-7 col-lg-5 new-col-mobile">
             <label for="senha" class="form-label">Senha</label>
             <input type="password" name="senha" class="form-control" id="senha" placeholder="**********">
             <div class="invalid-feedback">
@@ -40,8 +40,8 @@ require_once("includes/header.php");
             </div>
         </div>
 
-        <div class="col-md-77 col-lg-5">
-        <label for="file" class="form-label input">Arquivo de imagem</label>
+        <div class="col-md-77 col-lg-5 new-col-mobile2">
+        <label id="input-1024" for="file" class="form-label input">Arquivo de imagem</label>
         <input type="file" id="file" name="arquivo">
         </div>
 

@@ -1,8 +1,15 @@
-@media only screen and (min-width: 1200px) and (max-width: 1280px) { 
+@media only screen and (min-width: 1221px) and (max-width: 1280px) { 
   #formSuporte {
     grid-template-columns: auto auto auto ;
     grid-template-rows: 95% 100% 50%;
     align-items: center;
+  }
+  #botao-editar-noticia{
+    margin-top: -1.8em;
+    margin-left: 37.5em;
+  }
+  #botao-editar-noticia input{
+    border:none;
   }
   #file{
     margin-top: 1em;
@@ -25,6 +32,7 @@
   #espaco-titulo-more{
     margin-top: 0.5em;
   }
+
   .noticia-post{
     align-items: center;
     justify-content: center;
@@ -210,10 +218,6 @@
   #txtArea-editar-noticia:focus{
     border-color: #fe6c2b;
     outline: #fe6c2b;
-  }
-  #botao-editar-noticia{
-    margin-top: -2em;
-    margin-left: 37.5em;
   }
 
   #botao-excluir-noticia{
@@ -454,10 +458,226 @@
       margin-top: -2em;
       margin-left: 37.5em;
     }
+    #botao-editar-noticia input{
+      border:none;
+    }
   
     #botao-excluir-noticia{
       margin-top: -1.8em;
       margin-left: 32.5em;
+      background-color: #340016e0;
+      transition: 0.1s;
+    }
+    #botao-excluir-noticia input{
+      background-color: #340016b0;
+      border: none;
+    }
+    #botao-excluir-noticia:hover input{
+      background-color: #46001d;
+    }
+    #botao-excluir-noticia:hover{
+      background-color: #46001d;
+    }
+  #img_acesso_full{
+    border-radius: .8rem;
+  }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width:1220px) { 
+
+    #input-1024 {
+      width: 180px;
+    }
+
+    #formSuporte {
+      grid-template-columns: auto auto auto ;
+      grid-template-rows: 95% 100% 50%;
+      align-items: center;
+    }
+    #file{
+      margin-top: 1em;
+    }
+    #button-cadastrar-noticia{
+      margin-top:1em;
+      margin-bottom: 10em;
+    }
+    #img_seta{
+      width: 1em;
+      height: auto;
+    }
+    #link_novoregistro_login{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .featurette-divider{
+      color: #080808;;
+    }
+    #espaco-titulo-more{
+      margin-top: 0.5em;
+    }
+    .noticia-post{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      align-items: center;
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      border-radius: .8rem;
+      padding: 1rem;
+      background: linear-gradient(to right,  rgba(0, 0, 0, 1) 45%,
+                                             rgba(157, 60, 20, 0.75));
+      box-shadow: 0 1.4rem 9rem rgba(0.0.0.3); 
+      height: auto;
+
+    }
+    .noticia-post-img{
+      height: auto;
+      width: 27rem;
+    }
+   
+    .noticia-post-titulo{
+      text-align: center;
+      color: #fe6a2be7;
+      text-shadow: 4px 4px 4px black;
+      width :980px;
+      margin-top: -0.7em;
+      padding-top: 1em;
+      margin-left: -15.5em;
+      padding-bottom: 1em;
+    }
+    .noticia-post-subtitulo{
+      color: #dadada;
+      font-size: 1.6rem;
+      text-shadow: 4px 4px 4px black;
+      width :990px;
+      margin-left: -17em;
+    }
+    .noticia-post-botao{
+      padding: 0.7em;
+      border-radius: .8rem;
+      background-color: #000;
+      color: #dadada;
+      letter-spacing: 1px;
+      border:none;
+      width: 10em;
+      transition:0.2s;
+      margin-left: 20em;
+    }
+    .noticia-post-botao:hover{
+      color: #ff9b70;
+      padding: 0.8em 0.8em;
+    }
+    .noticia-post-texto {
+      text-align: justify;
+      border-radius: .8rem;
+      height: 15.8em;
+      max-height: 17em;
+      background-color: transparent;
+      border: none;
+      width: 29em;
+    }
+    .noticia-post-autor {
+      font-style: italic;
+      width: 100%;
+      margin-left: -27em;
+    }
+   
+    .noticia-post-full{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1.6em;
+      margin-right: 1.6em;
+      border-radius: .8rem;
+      padding: 1rem;
+      background: linear-gradient(to right,  rgba(0, 0, 0, 1) 45%,
+                                             rgba(157, 60, 20, 0.75));
+      box-shadow: 0 1.4rem 9rem rgba(0.0.0.3); 
+      height: 76em;
+    }
+    .noticia-post-img-full{
+      width: 28rem;
+      height: auto;
+      margin-left: -12em;
+      margin-top: -15em;
+    }
+    .noticia-post-titulo-full{
+      text-align: center;
+      text-shadow: 4px 4px 4px black;
+      font-size: 3em;
+      padding-top: 1em;
+      margin-top: -2em;
+      padding-bottom: 1em;
+      display: block;
+      color: #fe6a2be7;
+      text-shadow: 4px 4px 4px black;
+      width :980px;
+      margin-left: -10.5em;
+    }
+    .noticia-post-subtitulo-full{
+      font-size: 2em;
+      padding-right: 1em;
+      padding-left: 1em;
+      color: #dadada;
+      margin-left: -15.2em;
+      text-shadow: 4px 4px 4px black;
+      width: 970px;
+    }
+    .noticia-post-texto-full{
+      text-align: justify;
+      border-radius: .8rem;
+      height: 40em;
+      max-height: 41em;
+      background-color: transparent;
+      border: none;
+      margin-left: 0.8em;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 29em;
+    }
+    .noticia-post-autor-full {
+      width: 100%;
+      font-style: italic;
+      margin-left: -5.5em;    }
+    #id-noticia-editar{
+      display: block;
+      position: absolute;
+      margin-top: 12.8em;
+      margin-left: 13em;
+    }
+    .input-alterar-noticia {
+      border:none;
+      border-bottom: 1px solid #dadada;
+      background-color: transparent;
+      outline: 0;
+    }
+    .input-alterar-noticia:hover {
+      border-bottom: 1px solid #fe6a2bcb;
+      outline: 0;
+    }
+    .input-alterar-noticia:focus {
+      border-bottom: 1px solid #fe6a2bcb;
+      outline: 0;
+    }
+    #txtArea-editar-noticia:focus{
+      border-color: #fe6c2b;
+      outline: #fe6c2b;
+    }
+    #botao-editar-noticia{
+      margin-top: -2em;
+      margin-left: 19em;
+    }
+    #botao-editar-noticia input{
+      border:none;
+    }
+  
+    #botao-excluir-noticia{
+      margin-bottom: -1.1em;
+      margin-left: 8em;
       background-color: #340016e0;
       transition: 0.1s;
     }
@@ -491,6 +711,8 @@ body {
   color: #dadada;
   width: 100%;
   height: 100vh;
+  max-width: 100%;
+  overflow-x:hidden;
 }
 .margin-titulo{
   margin-left:1em;

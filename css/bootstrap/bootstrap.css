@@ -1150,12 +1150,46 @@ progress {
     margin-left: auto;
     margin-right:auto;
   }
+  
   .col-md-77 {
     flex: 0 0 auto;
     width: 58.33333333%;
     margin-left: auto;
     margin-right:auto;
     margin-top: 1em;
+  }
+  @media screen and (min-width: 1024px) and (max-width:1220px) {
+
+    .col-md-7 {
+      flex: 0 0 auto;
+      width: 31.33333333%;
+      margin-left: 1;
+      margin-right:0;
+    }
+    
+    .col-md-77 {
+      flex: 0 0 auto;
+      width: 30.33333333%;
+      margin-left: -2em;
+      margin-right:1em;
+    }
+    .new-col-mobile {
+      flex: 0 0 auto;
+      width: 58.33333333%;
+      margin-left: auto;
+      margin-right:auto;
+    }
+    .new-col-mobile2{
+      flex: 0 0 auto;
+      width: 58.33333333%;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top: 1em;
+    }
+    .mx-auto-2 {
+      margin-right: auto !important;
+      margin-left: auto;
+    }
   }
   .col-md-777 {
     flex: 0 0 auto;
@@ -7734,6 +7768,7 @@ textarea.form-control-lg {
   margin-right: auto !important;
   margin-left: 2em;
 }
+
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;

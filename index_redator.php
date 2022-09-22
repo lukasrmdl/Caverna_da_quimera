@@ -45,18 +45,18 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
     </div>
     <form onsubmit="return validar();" action="controllers/controller_redator.php" method="POST">
 
-    <div class="col-md-7 col-lg-5">
+    <div class="col-md-7 col-lg-5 new-col-mobile">
         <label for="email" class="form-label">Email</label>
         <input type="text" name="email" class="form-control" id="email" placeholder="redator@quimera.com">
 
     </div>
 
-    <div class="col-md-7 col-lg-5 espaco-titulo-2">
+    <div class="col-md-7 col-lg-5 espaco-titulo-2 new-col-mobile">
         <label for="senha" class="form-label">Senha</label>
         <input  type="password" name="senha" class="form-control" id="senha" placeholder="********">
 
     </div>
-    <div class="col-md-77 col-lg-5 espaco-titulo-3">
+    <div class="col-md-77 col-lg-5 espaco-titulo-3 new-col-mobile2">
         <input class="btn btn-primary col-lg-3 " type="submit" name="botao" value="Logar">
         <input class="btn btn-secondary col-lg-3 "  type="reset" name="botao" value="Limpar">
         <a id="link_novoregistro_login" href="form_cad_redator.php" class="botao_novo_cadastro_login btn btn-primary col-lg-55 ">Novo Redator</a>
