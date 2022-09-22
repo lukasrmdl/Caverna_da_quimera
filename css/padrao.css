@@ -540,7 +540,7 @@
       text-align: center;
       color: #fe6a2be7;
       text-shadow: 4px 4px 4px black;
-      width :980px;
+      width :350%;
       margin-top: -0.7em;
       padding-top: 1em;
       margin-left: -15.5em;
@@ -550,7 +550,7 @@
       color: #dadada;
       font-size: 1.6rem;
       text-shadow: 4px 4px 4px black;
-      width :990px;
+      width :350%;
       margin-left: -17em;
     }
     .noticia-post-botao{
@@ -615,7 +615,7 @@
       display: block;
       color: #fe6a2be7;
       text-shadow: 4px 4px 4px black;
-      width :980px;
+      width :350%;
       margin-left: -10.5em;
     }
     .noticia-post-subtitulo-full{
@@ -625,7 +625,7 @@
       color: #dadada;
       margin-left: -15.2em;
       text-shadow: 4px 4px 4px black;
-      width: 970px;
+      width: 350%;
     }
     .noticia-post-texto-full{
       text-align: justify;
