@@ -1332,6 +1332,15 @@ progress {
     flex: 0 0 auto;
     width: 41.66666667%;
   }
+  @media only screen and (min-width: 1280px) {
+    .col-lg-5 {
+      flex: 0 0 auto;
+      width: 43.66666667%;
+    }
+    #link_novoregistro_login{
+      margin-left:0em;
+    }
+  }
   .col-lg-55 {
     flex: 0 0 auto;
     width: 48%;
@@ -5390,9 +5399,6 @@ textarea.form-control-lg {
   overflow-y: auto;
   outline: 0;
 }
-#link_novoregistro_login{
-  margin-left: 2em;
-};
 .modal-dialog {
   position: relative;
   width: auto;

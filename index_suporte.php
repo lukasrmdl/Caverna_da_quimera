@@ -1,15 +1,16 @@
 <?php
+echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 require_once("includes/header.php");
 require("controllers/funcoes_db.php");
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
+session_start();
 
 ?>
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
@@ -127,12 +128,15 @@ $conexao = fazconexao();
 <div class="container">
   <main>
     <?php
+
+
     echo "<div style='text-align:center; id='msg'>";
 
     if (isset($_SESSION['msg'])) {
         echo "<br><br>" . $_SESSION['msg'] . "<br><br>";
         unset($_SESSION['msg']);
     }
+    echo "</div>";
     ?>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="midia/quimera_logo.png" alt="" width="72" height="67">

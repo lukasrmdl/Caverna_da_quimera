@@ -13,6 +13,8 @@ if($_POST['botao']=='enviar'){
 	$assunto=$_POST['erro_assunto'];
 	$erro=$_POST['erro_descricao'];
 
+	$_SESSION["msg"]=''; 
+
 
 	$array = array($nome, $sobrenome, $email, $endereco, $logradouro, $estado, $cidade, $cep, $assunto, $erro);
 

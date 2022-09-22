@@ -1,10 +1,22 @@
 <?php
+echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 require_once("includes/header.php");
 
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
 include("controllers/funcoes_db.php");
 $conexao=fazconexao();
+session_start();
+
+
+    echo "<div style='text-align:center; id='msg'>";
+
+    if (isset($_SESSION['msg'])) {
+        echo "<br><br>" . $_SESSION['msg'] . "<br><br>";
+        unset($_SESSION['msg']);
+    }
+    echo "</div>";
+
 
 echo "<div class='py-5 text-center'>";
 echo "<div class='col-md-7 col-lg-10'>";

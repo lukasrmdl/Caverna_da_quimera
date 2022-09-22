@@ -41,16 +41,16 @@ if($_POST['botao']=='Cadastrar'){
 	if($retorno)
 	{
              $hash=md5($email);
-               $link="<a href='localhost/caverna_da_quimera/valida_email.php?h=".$hash."'> Clique aqui para confirmar seu cadastro </a>";
+               $link="<a href='localhost/caverna_da_quimera/valida_email.php?h=".$hash."'> Clique aqui para confirmar o cadastro </a>";
               $mensagem="<tr><td style='padding: 10px 0 10px 0;' align='center' color='white' bgcolor='white'>";
               $mensagem.="<img src='cid:logo_ref' style='display: inline; padding: 0 10px 0 10px;' width='10%' />";
 
-               $mensagem.="<br> Email de Confirmação  <br>".$link."</td></tr>";
-               $assunto="Confirme seu cadastro como redator";
+               $mensagem.="<br> Solicitação de cadastro como redator <br>".$link."</td></tr>";
+               $assunto="Confirme o cadastro do usuario " .$nome. " como redator";
 
                $retorno= enviaEmail($email,$nome,$mensagem,$assunto);
         
-               $_SESSION["msg"]= "Valide o Cadastro no email";
+               $_SESSION["msg"]= "A nossa Equipe está avaliando o seu pedido de cadastro como redator, tenha paciência que iremos retornar a sua mensagem!";
 
 	}
 	else

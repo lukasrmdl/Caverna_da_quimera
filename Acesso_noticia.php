@@ -1,10 +1,12 @@
 <?php
+echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 require("controllers/funcoes_db.php");
 require_once("includes/header.php");
 $query = "";
 $noticia = $_GET['acessa_noticia'];
 
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
+
 $conexao = fazconexao();
 
 $sql = "SELECT * FROM noticias WHERE '$noticia' = idnoticia ";
@@ -21,7 +23,7 @@ foreach($resultados as $linha) {
 
 <div class="row noticia-post-full d-flex">
   <div class="col-md-77 noticia-post-img-full">
-    <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="92%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
+    <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="auto" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
   </div>
   <div class="col-md-7 noticia-post-info">
     <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">

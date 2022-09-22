@@ -1,5 +1,6 @@
 <?php     
         include("controllers/funcoes_db.php");
+        echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
         $conexao=fazconexao();
         $query = "select * from categorias order by nome";
         $resultados=ConsultaSelectAll($query);
@@ -11,6 +12,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 ?>
 
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="funcoes_ajax.js"> </script>
 
 <body>
