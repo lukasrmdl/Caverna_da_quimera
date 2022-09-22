@@ -38,6 +38,8 @@ foreach($resultados as $linha) {
     <div class="row noticia-post d-flex">
       <div class="col-md-77 noticia-post-img">
         <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="auto" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
+        <label class="input" for="file">Escolher nova imagem</label>
+        <input type="file" id="file" name="arquivo_capa">
       </div>
       <div class="col-md-7 noticia-post-info">
       <form action="controllers/controller_noticia.php" method="POST"  enctype="multipart/form-data">
@@ -47,6 +49,8 @@ foreach($resultados as $linha) {
         <h3 name='subtitulo_noticia' class="noticia-post-subtitulo"><input class="input-alterar-noticia" type="text" name="subtitulo_noticia" value="<?php echo $linha['subtitulo']?>"></h3>
         <textarea id="txtArea-editar-noticia" class="noticia-post-texto" name="texto_noticia"><?php echo $linha['texto']?></textarea>
         <?php echo "<p class='noticia-post-autor'>Autor: $linha[nome] $linha[sobrenome], $linha[data]</p>" ?>
+        <p id="botao-excluir-noticia" class='btn2 btn-primary noticia-post-botao'><input  type="submit" name="botao" value="Excluir" ></input></p>
+
         <p id="botao-editar-noticia" class='btn2 btn-primary noticia-post-botao'><input  type="submit" name="botao" value="Editar" ></input></p>
  
         </form>

@@ -33,6 +33,13 @@
                     <li><a class="nav redator" href="index_redator.php">Redator</a></li>
                 </ul>
             </li>
+            <?php 
+            session_start();
+            if((isset($_SESSION['email'])) && (isset($_SESSION['logado']))){
+                echo "<li id='botao_sair'><a class='btn' href='sair.php'>Sair</a></li>";
+            }
+            ?>
+
         </ul>
 
     </nav>

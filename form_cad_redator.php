@@ -40,12 +40,12 @@ require_once("includes/header.php");
             </div>
         </div>
 
-        <div class="col-md-7 col-lg-5">
-        <label for="file" class="form-label">Arquivo de imagem</label>
+        <div class="col-md-77 col-lg-5">
+        <label for="file" class="form-label input">Arquivo de imagem</label>
         <input type="file" id="file" name="arquivo">
         </div>
 
-        <div style="margin-top:1em;" class="col-md-777 col-lg-5">
+        <div style="margin-top:-3em;" class="col-md-777 col-lg-5">
         <p><input class="btn btn-secondary col-lg-3 " type="reset" name="botao" value="Limpar">
             <input class="btn btn-primary col-lg-3 " type="submit" name="botao" value="Cadastrar">
         </p>

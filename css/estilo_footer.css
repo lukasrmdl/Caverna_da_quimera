@@ -59,11 +59,15 @@
 }
 #footer_nav {
     list-style-type: none;
-    background-color: #000;
+    background: linear-gradient(to right,  rgba(0, 0, 0, 1) 45%,
+    rgba(157, 60, 20, 0.75));
+    box-shadow: 0 1.4rem 9rem rgba(0.0.0.3); 
 }
 #footer_nav ul {
     overflow: hidden;
-    background-color: #000;
+    background: linear-gradient(to right,  rgba(0, 0, 0, 1) 45%,
+    rgba(157, 60, 20, 0.75));
+    box-shadow: 0 1.4rem 9rem rgba(0.0.0.3); 
     display: flex;
     justify-content: center;
 }
@@ -79,23 +83,22 @@
 
 }
 #footer_nav a, #footer_nav a:link{
-    background-color: #000000c7;
-    color: #dadada;
+    background-color: transparent;
+    color: #fff;
     text-align: center;
     text-decoration: none;
 }
 
 #footer_nav a:hover {
     text-decoration: none;
-    border-bottom: 2px inset #fe6c2b;
-    color: #fe6c2b;
+    border-bottom: 2px inset #fff;
+    color: #fff;
 }
 #footer_nav a:active {
     text-decoration: none;
-    color: #fe6c2b;
+    color: #fff;
     border-bottom: 0px solid;
 }
-
 .dropdown_footer ul {
     list-style-type: none;
     padding: 0;
@@ -215,7 +218,9 @@
     }
     #footer_nav ul {
         overflow: hidden;
-        background-color: #000;
+        background: linear-gradient(to right,  rgba(0, 0, 0, 1) 45%,
+        rgba(157, 60, 20, 0.75));box-shadow: 0 1.4rem 9rem rgba(0.0.0.3); 
+        box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
         display: flex;
         justify-content: center;
     }
@@ -231,7 +236,7 @@
     
     }
     #footer_nav a, #footer_nav a:link{
-        background-color: #000000c7;
+        background-color: transparent;
         color: #dadada;
         text-align: center;
         text-decoration: none;
@@ -239,13 +244,13 @@
     
     #footer_nav a:hover {
         text-decoration: none;
-        border-bottom: 2px inset #fe6c2b;
-        color: #fe6c2b;
+        border-bottom: 2px inset #fff;
+        color: #fff;
     }
     #footer_nav a:active {
         text-decoration: none;
-        color: #fe6c2b;
-        border-bottom: 0px solid;
+        color: #fff;
+        border-bottom: 0px inset;
     }
     
     .dropdown_footer ul {

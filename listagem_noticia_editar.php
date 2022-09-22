@@ -6,7 +6,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 
 include("controllers/funcoes_db.php");
 $conexao=fazconexao();
-session_start();
+
 
 
     echo "<div style='text-align:center; id='msg'>";
@@ -54,10 +54,11 @@ foreach($resultados as $linha) {
     
     <hr class="featurette-divider">
     
+    
     <div class="row noticia-post d-flex">
       <div class="col-md-77 noticia-post-img">
-        <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="92%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
-      </div>
+      <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="92%" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
+    </div>
       <div class="col-md-7 noticia-post-info">
       <form action="controllers/controller_noticia.php" method="POST"  enctype="multipart/form-data">
         <input name="idnoticia" type ="hidden" value="<?php echo $linha['idnoticia']?>">

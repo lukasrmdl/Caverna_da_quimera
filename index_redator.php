@@ -1,6 +1,12 @@
 <?php
-echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 require_once("includes/header.php");
+
+
+if((isset($_SESSION['email'])) && (isset($_SESSION['logado'])))
+{
+header("Location:listagem_noticia_editar.php"); // se as variáveis de sessão não estão setadas direciona para o formulário de login
+}
+echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 ?>
 
@@ -33,10 +39,6 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
     </script>
 </head>
 <body>
-    <?php
-    session_start();
-
-    ?>
     <div class="py-5 text-center">
       <img class="d-block mx-auto mb-4" src="midia/quimera_logo.png" alt="" width="72" height="67">
       <h2>Login</h2>

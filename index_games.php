@@ -4,7 +4,6 @@ require("controllers/funcoes_db.php");
 require_once("includes/header.php");
 ?>
 <body id="games_body">
-
 <?php
 
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";

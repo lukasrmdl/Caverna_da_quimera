@@ -84,7 +84,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
          </div>
 
         <div>
-        <label for="file" class="form-label">Capa da matéria</label>
+        <label for="file" class="form-label input">Capa da matéria</label>
         <input type="file" id="file" name="arquivo_capa">
         </div>
 

@@ -9,3 +9,4 @@ paleta de cores
 #dadadad5 - branco sombra;
 #fff - branco mais claro;
 Fonte: Noto Serif
+laranja gradiente rgba(71,30,13,255)

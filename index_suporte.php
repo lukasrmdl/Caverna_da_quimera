@@ -4,7 +4,6 @@ require_once("includes/header.php");
 require("controllers/funcoes_db.php");
 echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
-session_start();
 
 ?>
 <!doctype html>
