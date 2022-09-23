@@ -12,7 +12,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
 
 
-$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Livros'";
+$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Livros' ORDER BY idnoticia DESC;";
 
 
 $resultados = ConsultaSelectAll($sql);
@@ -26,7 +26,7 @@ foreach($resultados as $linha) {
     <hr class="featurette-divider">
     
     <div class="row noticia-post d-flex">
-      <div class="col-md-77 noticia-post-img">
+    <div class="col-md-77 noticia-post-img">
         <?php echo '<img id="img_acesso_full" class=" mx-auto-2" width="100%" height="auto" src="./imagens_noticias/'.$linha['nome_capa'].'" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></img>';?>
       </div>
       <div class="col-md-7 noticia-post-info">

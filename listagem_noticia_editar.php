@@ -44,7 +44,7 @@ if(isset($_SESSION['msg']))
 echo "</div>";
 
 
-$query = "select * from noticias ORDER BY idnoticia;";
+$query = "select * from noticias ORDER BY idnoticia DESC;";
 
 $resultados=ConsultaSelectAll($query);
 

@@ -5970,6 +5970,7 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
+  margin: 0;     
   position: relative;
   display: none;
   float: left;
@@ -7767,6 +7768,118 @@ textarea.form-control-lg {
 .mx-auto-2 {
   margin-right: auto !important;
   margin-left: 2em;
+}
+@media all and (min-width: 768px) and (max-width: 1023px){
+  .mx-auto-2 {
+    margin-right: auto !important;
+    margin-left: auto;
+  }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 60%;
+  }
+  .col-md-4{
+    flex: 0 0 auto;
+    width: 50.33333333%;
+  }
+  .new-col-mobile2{
+    flex: 0 0 auto;
+    width: 60.33333333%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 1em;
+  }
+  .col-lg-55 {
+    flex: 0 0 auto;
+    width: 48%;
+  }
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 67.66666667%;
+  }
+  .col-md-7777 {
+    flex: 0 0 auto;
+    width: 68.33333333%;
+    margin-left: 55.5%;
+    margin-right:auto;
+    margin-top: 1em;
+  }
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .new-col-mobile {
+    flex: 0 0 auto;
+    width: 68.33333333%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  #button-cadastrar-noticia{
+    margin-top: -2em;
+    margin-bottom: 4%;
+  }
+}
+@media all and (max-width: 767px){
+  .mx-auto-2 {
+    margin-top: 1em;
+    margin-right: auto !important;
+    margin-left: auto;
+  }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 60%;
+  }
+  .col-md-4{
+    flex: 0 0 auto;
+    width: 50.33333333%;
+  }
+  .new-col-mobile2{
+    flex: 0 0 auto;
+    width: 60.33333333%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 1em;
+  }
+  .col-lg-55 {
+    flex: 0 0 auto;
+    width: 46%;
+  }
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 67.66666667%;
+  }
+  .col-md-7777 {
+    flex: 0 0 auto;
+    width: 77.33333333%;
+    margin-left: 58.5%;
+    margin-right:auto;
+    margin-top: 1em;
+  }
+  #cadastro_nova_noticia{
+    width: 40%;
+  }
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .new-col-mobile {
+    flex: 0 0 auto;
+    width: 68.33333333%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  #button-cadastrar-noticia{
+    margin-top: -2em;
+    margin-bottom: 4%;
+  }
 }
 
 .mx-auto {

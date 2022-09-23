@@ -4,6 +4,9 @@
     margin:0;
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+    #mobile-nav-full{
+        display: none;
+    }
     .grid-container-header {
         display: grid;
         grid-template-columns: auto auto auto ;
@@ -152,7 +155,357 @@
         color: #dadadad5;
     }
  }
+ 
+ @media all and (min-width: 481px) and (max-width:1023px){
+
+    .grid-container-header {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 30% 40%;
+        align-items: center;
+        background-color: #080808;
+     }
+     #h1-index-us{
+        margin-top: 1em;
+        text-align: center;
+     }
+    .grid-item-header {
+        align-items: center;
+        text-align: center;
+        padding-left: 4.0;
+    }
+    #header_cabecario_h1 img{
+        width: 7.5rem;
+        vertical-align: bottom;
+        padding-top: 0.6em;
+    }
+    #header_cabecario_h1 span{
+        font-family: 'Noto Serif', sans-serif;    
+        font-size: 2rem;
+        color: #dadadad5;
+        border:none;
+        text-align: center;
+
+    }
+    #form-header-busca{
+        padding-top: 0.2em;
+        margin-bottom: 1rem;
+
+    }
+    #form-header-busca label{
+        display: block;
+    }
+    #form-header-busca input{
+        width: 140%; 
+        margin-left: 15%;   
+    }
+
+    #header_title{
+        border: none;
+        text-decoration: none;
+        transition: 1s;
+    }
+    #header_title span:hover{
+        color: #fe6a2bc5;
+        filter: opacity(0.9) drop-shadow(0 0 0 rgb(224, 101, 0)); 
+    }
+    #header_img img:hover{
+        filter: grayscale(80%); 
+        filter: brightness(5);	
+    }
+    #mobile-nav-full nav, ul {
+        display: flex;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    #us{
+        flex-direction: column;
+        align-items: center;        
+        text-align: center;
+    }
+    #mobile-nav-full nav {
+        align-items: center;
+        padding: 5 15px;
+    }
+    #mobile-nav-full ul{
+        list-style: none;
+        padding: 5 5;
+        text-align: center;
+        margin: 1em;
+        height: 0%;
+        overflow: hidden;
+    }
+
+    #mobile-nav-full li{
+        padding: 5 20px;
+        background-color: transparent;
+    }
+    #mobile-nav-full li:hover{
+        border-bottom: inset 1px #fe6c2b;  
+    }
+    #mobile-nav-full a{
+        font-size: 1.2rem;
+        padding: 5 20px;
+        color: #dadada;
+        text-decoration: none;
+    }
+    #botao_sair{
+        background-color: transparent;
+        border: none;  
+       }
+    #botao_sair a {
+        position: absolute; 
+        top: 0.8rem;
+        right: 1.7rem;
+        background-color: transparent;
+        border: none;  
+        color: #dadada;
+        font-size: 1.5rem;
+    }
+    #botao_sair a:hover {
+        background-color: transparent;
+        border: none;  
+        color: #dadada;
+        font-size: 1.5rem;
+    }
+    #mobile-nav-full a:hover{
+        padding: 0 20px;
+        color: #fe6c2b;
+        text-decoration: none;
+    }
+    #mobile-nav-full ul, li{
+        width: 100%;
+    }
+ 
+    #mobile-nav-full button {
+        background-color: transparent;
+        border: none;  
+        color: #dadada;
+        font-size: 2.5rem;
+        position: absolute;
+        right: 1.7rem;
+        top: 8.8rem;
+        display: flex;
+        transition: 0.9s;
+    }
+    #mobile-nav-full button:hover{
+        color: #fe6c2b;
+        cursor: pointer;
+    }
+    #mobile-nav-full button:focus ~ ul{
+        height: 330px;
+    }
+
+
+    #mobile-nav-full button:focus {
+        color: #fe6c2b;
+    }
+    #search_header {
+        width: 60%;
+        background-color: transparent;
+        color: #fff;
+        border: #dadadaef 2px solid;
+        border-radius: 2px;
+        font-size: 0.6em;
+        margin-top: -0.5em;
+        padding: 5px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        transition: 0.5s;
+      }
+      #desktop-nav{
+        display: none;
+      }
+    #search_header:focus {
+        color: #dadada;
+        background-color: transparent;
+        outline: 0;
+        background-size: 100% 2p;
+        border-bottom:#fe6c2b 2px solid;
+    }
+    #search_header::placeholder{
+        color: #dadadad5;
+    }
+
+ }
+ @media all and (max-width: 480px){
+    .grid-container-header {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 30% 40%;
+        align-items: center;
+        background-color: #080808;
+     }
+     #h1-index-us{
+        margin-top: 1em;
+        text-align: center;
+     }
+    .grid-item-header {
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+    #header_cabecario_h1 img{
+        width: 7.5rem;
+        vertical-align: bottom;
+        padding-top: 0.6em;
+    }
+    #header_cabecario_h1 span{
+        font-family: 'Noto Serif', sans-serif;    
+        font-size: 1.5rem;
+        color: #dadadad5;
+        border:none;
+        text-align: center;
+
+    }
+    #form-header-busca{
+        padding-top: 0.4em;
+        margin-bottom: 1rem;
+
+    }
+    #form-header-busca label{
+        display: block;
+    }
+    #form-header-busca input{
+        width: 140%; 
+        margin-left:14.8%;   
+    }
+    #header_title{
+        border: none;
+        text-decoration: none;
+        transition: 1s;
+    }
+    #header_title span:hover{
+        color: #fe6a2bc5;
+        filter: opacity(0.9) drop-shadow(0 0 0 rgb(224, 101, 0)); 
+    }
+    #header_img img:hover{
+        filter: grayscale(80%); 
+        filter: brightness(5);	
+    }
+    #mobile-nav-full nav, ul {
+        display: flex;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    #us{
+        flex-direction: column;
+        align-items: center;        
+        text-align: center;
+    }
+    .marketing{
+        margin-top: 6em;
+    }
+    #mobile-nav-full nav {
+        align-items: center;
+        padding: 0 0;
+    }
+    #mobile-nav-full ul{
+        list-style: none;
+        padding: 0 0;
+        text-align: center;
+        margin: 1em;
+        height: 0%;
+        overflow: hidden;
+    }
+
+    #mobile-nav-full li{
+        padding: 4 20px;
+        background-color: transparent;
+    }
+    #mobile-nav-full a{
+        font-size: 1.2rem;
+        padding: 5 20px;
+        color: #dadada;
+        text-decoration: none;
+    }
+    #botao_sair{
+        background-color: transparent;
+        border: none;  
+       }
+    #botao_sair a {
+        position: absolute; 
+        top: 0.8rem;
+        right: 1.7rem;
+        background-color: transparent;
+        border: none;  
+        color: #dadada;
+        font-size: 1.5rem;
+    }
+    #botao_sair a:hover {
+        background-color: transparent;
+        border: none;  
+        color: #dadada;
+        font-size: 1.5rem;
+    }
+    #mobile-nav-full a:hover{
+        padding: 0 20px;
+        color: #fe6c2b;
+        text-decoration: underline;
+    }
+    #mobile-nav-full ul, li{
+        width: 100%;
+    }
+ 
+    #mobile-nav-full button {
+        background-color: transparent;
+        border: none;  
+        color: #dadada;
+        font-size: 2.5rem;
+        position: absolute;
+        right: 1.7rem;
+        top: 8.8rem;
+        display: flex;
+        transition: 0.9s;
+    }
+    #mobile-nav-full button:hover{
+        color: #fe6c2b;
+        cursor: pointer;
+    }
+    #mobile-nav-full button:focus ~ ul{
+        height: 300px;
+    }
+
+
+    #mobile-nav-full button:focus {
+        color: #fe6c2b;
+    }
+    #search_header {
+        width: 60%;
+        background-color: transparent;
+        color: #fff;
+        border: #dadadaef 2px solid;
+        border-radius: 2px;
+        font-size: 0.6em;
+        margin-top: -0.5em;
+        padding: 5px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        transition: 0.5s;
+      }
+      #desktop-nav{
+        display: none;
+      }
+    #search_header:focus {
+        color: #dadada;
+        background-color: transparent;
+        outline: 0;
+        background-size: 100% 2p;
+        border-bottom:#fe6c2b 2px solid;
+    }
+    #search_header::placeholder{
+        color: #dadadad5;
+    }
+
+ }
+
+
  @media all and (min-width: 1280px){
+    #mobile-nav-full{
+        display: none;
+    }
     .grid-container-header {
         display: grid;
         grid-template-columns: auto auto auto ;

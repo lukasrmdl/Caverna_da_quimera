@@ -45,22 +45,9 @@ if($_POST['botao']=='Editar'){
 	$subtitulo=$_POST['subtitulo_noticia'];
 	$texto=$_POST['texto_noticia'];
 
-	if (move_uploaded_file($arquivo_temporario, "../imagens_noticias/$nome_arquivo"))
-	{
-			$_SESSION["msg"]= " Upload do arquivo: ". $nome_arquivo." foi concluído com sucesso <br>";
-	}
-	else
-	{
-		$_SESSION["msg"]= "Arquivo não pode ser copiado para o servidor.";
-			$nome_arquivo='foto.png';
+    $query= "update noticias set titulo= ?, subtitulo= ?, texto = ? where idnoticia = ?";
 
-	}
-
-	$_SESSION["msg"]=''; 
-
-    $query= "update noticias set titulo= ?, subtitulo= ?, texto = ?, capa = ?, nome_capa = '{$nome_arquivo}' where idnoticia = ?";
-
-    $array = array($titulo, $subtitulo, $texto,$nome_arquivo,$idnoticia);
+    $array = array($titulo, $subtitulo, $texto, $idnoticia);
 
 	$resultado=fazConsulta($query,$array);
 	

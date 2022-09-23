@@ -116,7 +116,7 @@ $conexao = fazconexao();
 
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div id="us" class="row">
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-circle equipeimg" width="130" height="130" src="./midia/equipe/lukas.png" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
         <h2>Lukas Raphael - Dev</h2>

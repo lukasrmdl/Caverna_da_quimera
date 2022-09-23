@@ -10,7 +10,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
 
 
-$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Séries'";
+$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Séries' ORDER BY idnoticia DESC;";
 
 
 $resultados = ConsultaSelectAll($sql);

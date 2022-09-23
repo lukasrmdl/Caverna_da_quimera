@@ -13,7 +13,7 @@
             <input type="text" size= "26" name="busca_assunto" id="search_footer"  placeholder="Procurar...">
         </form> 
     </h1>
-
+    <div id="nav-footer-full">
     <nav id="footer_nav">
 
         <ul>
@@ -27,6 +27,7 @@
         </ul>
 
     </nav>
+    </div>
     <div class="grid-container-footer-info" id="footer_info">
         <p class="grid-item-footer-info">© 2022 Caverna da Quimera - Cinema, Séries, Games, Livros e Quadrinhos</p>
         <a href="https://www.facebook.com/profile.php?id=100086211336364"><button id="facebook" class="grid-item-footer-info rede_social" type="button"><img src="midia/facebook.png" width="32" height ="auto" /></button></a>

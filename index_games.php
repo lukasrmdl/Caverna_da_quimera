@@ -11,7 +11,7 @@ echo "<link rel='stylesheet' type='text/css' href='css/padrao.css'>";
 $conexao = fazconexao();
 
 
-$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Games'";
+$sql = "SELECT * FROM noticias WHERE nomecategoria = 'Games' ORDER BY idnoticia DESC;";
 
 
 $resultados = ConsultaSelectAll($sql);
