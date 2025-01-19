@@ -34,6 +34,7 @@ Chimera's Cave is an MVP (Minimum Viable Product) website for delivering news an
    - Access the project via your browser at `http://localhost/chimeras-cave`.
 
 ## Notes
+- It was used Bootstrap for some functions of the website, such as the carousels.
 - **Learning Project**: This project reflects my early experience with web development and is intentionally simple.
 - **No Frameworks**: All functionality is implemented without the use of external frameworks to enhance learning.
 
